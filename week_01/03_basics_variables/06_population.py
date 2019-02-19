@@ -9,3 +9,13 @@ for the next 3 years (without a leap year).
 Let's say the current population is 380,123,456.
 
 '''
+
+# 120 = 6 * 20 = 12 * 10 = 40 * 3
+# + 20 - 10 + 3
+
+pop_now = 380123456
+sec_per_yr = 60 * 60 * 24 * 365
+pop_3yr = pop_now + (sec_per_yr / 120) * (120/6 - 120/12 + 120/40)
+
+print(pop_3yr)
+

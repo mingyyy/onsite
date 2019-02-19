@@ -6,3 +6,5 @@ instead of writing it 3 times.
 Time for co-co-co-ding.
 
 '''
+
+print("write code to duplicate the " + 'co-'*3 + " part")
