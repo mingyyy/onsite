@@ -15,7 +15,7 @@ Let's say the current population is 380,123,456.
 
 pop_now = 380123456
 sec_per_yr = 60 * 60 * 24 * 365
-pop_3yr = pop_now + (sec_per_yr / 120) * (120/6 - 120/12 + 120/40)
+pop_3yr = pop_now + (sec_per_yr / 120) * (120/6 - 120/12 + 120/40) * 3
 
-print(pop_3yr)
+print(format(pop_3yr,"," ))
 
