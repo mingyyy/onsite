@@ -18,7 +18,7 @@ character to a numeric code, and chr, which converts numeric codes to
 characters. Letters of the alphabet are encoded in alphabetical order,
 so for example:
 
->>> ord('c') - ord('a')
+ ord('c') - ord('a')
 2
 
 Because 'c' is the two-eth letter of the alphabet. But beware:
@@ -29,3 +29,42 @@ ROT13, which is a Caesar cypher with rotation 13. If you are not easily
 offended, find and decode some of them.
 
 '''
+alpha = "abcdefghijklmnopqrstuvwxyz"
+
+for i in alpha:
+    print(i, ord(i), chr(ord(i)))
+
+
+def rotate_word(message, num):
+    """This function takes in two parameters
+    :param message is the message you want to rotate
+    :param num is how many alphabet you want to move forward
+    """
+    cypher = []
+    num = int(num)
+    for i in message.lower():
+        if num >= 26:
+            num = num % 26
+        elif num <= -26:
+            num = -(abs(num) % 26) # or -(-num%26)
+
+        if 122 >= num + ord(i) >= 97:
+            cypher.append(chr(ord(i) + num))
+        elif num + ord(i) < 97:
+            cypher.append(chr(ord(i) + 26 + num))
+        else:
+            cypher.append(chr(ord(i) - 26 + num))
+
+    result = "".join(cypher)
+    return print(result)
+
+
+rotate_word("Abc", -28)
+rotate_word("Abc", -27)
+rotate_word("Abc", -2)
+rotate_word("Abc", -1)
+
+rotate_word("Abc", 29)
+rotate_word("Abc", 30)
+rotate_word("Abc", 3)
+rotate_word("Abc", 4)
