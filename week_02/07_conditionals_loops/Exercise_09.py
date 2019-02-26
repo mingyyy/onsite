@@ -22,15 +22,14 @@ The output should look something like this:
 # #             num = str(i)
 # #         print(num + "|",  end= "")
 # #     print("")
-# # print("\n")
 
-x = 20
+
+x = 10
+num = 0
 for j in range(1, x+1, 1):
     for i in range(j, (x+1)*j, j):
         if len(str(x*i/j)) > len(str(i)):
             num = str(i) + " " * (len(str(x*i/j)) - len(str(i))-2)
-        else:
-            num = str(i)
         print(num + "|",  end= "")
     print("")
 
