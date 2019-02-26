@@ -18,11 +18,11 @@ def inbetween(num):
     return 'me gustas numero ' + str(num) + ", me gustaas tu"
 
 verse_repeat = '''me gustas el cielo, me gustas tu
-me gustas el mar, megustas tu 
-me gustas llorar, megustas tu
-me gustas pealar, megustas tu
-me gustas el cine, megustas tu
-me gustas la musica, megustas tu
+me gustas el mar, me gustas tu 
+me gustas llorar, me gustas tu
+me gustas pealar, me gustas tu
+me gustas el cine, me gustas tu
+me gustas la musica, me gustas tu
 '''
 verse_repeat = verse_repeat.title()
 for i in range(3):
