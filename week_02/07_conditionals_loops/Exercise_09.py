@@ -13,13 +13,24 @@ The output should look something like this:
 	10|20|30|40|50|60|70|80|90|100|
 
 '''
-for j in range(1, 11, 1):
-    for i in range(1*(j),11*(j),1*j):
-        if i < 10 or (i % (10*j)== 0 and i != 100):
-            num = str(i) + " "
+# x = 10
+# # for j in range(1,x+1, 1):
+# #     for i in range(j, (x+1)*j, j):
+# #         if i < 10 or (i % (10*j)== 0 and i != 100):
+# #             num = str(i) + " "
+# #         else:
+# #             num = str(i)
+# #         print(num + "|",  end= "")
+# #     print("")
+# # print("\n")
+
+x = 20
+for j in range(1, x+1, 1):
+    for i in range(j, (x+1)*j, j):
+        if len(str(x*i/j)) > len(str(i)):
+            num = str(i) + " " * (len(str(x*i/j)) - len(str(i))-2)
         else:
             num = str(i)
         print(num + "|",  end= "")
     print("")
-
 
