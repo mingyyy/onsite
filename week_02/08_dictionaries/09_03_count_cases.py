@@ -18,6 +18,24 @@ Example output:
 
 '''
 
+user = input("Please enter a string here: ")
+l = u = p = t = s = 0
+for i in user:
+    if i.islower() == True:
+        l += 1
+    elif i.isupper() == True:
+        u += 1
+    elif i == "!":
+        p += 1
+    elif i == " ":
+        s += 1
+    t += 1
+
+print(l, u, p, t-s)
+
+
+
+
 
 
 

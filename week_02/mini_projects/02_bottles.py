@@ -32,8 +32,7 @@ def repeat(n):
          "Take one down and pass it around, " + str(num-n-1) + " bottle of beer on the wall."
     else:
         return str(num-n) + " bottles of beer on the wall, " + str(num-n) + " bottles of beer.\n " \
-         "Take one down and pass it around, " + str(num-n-1) + \
-         " bottles of beer on the wall."
+         "Take one down and pass it around, " + str(num-n-1) + " bottles of beer on the wall."
 
 
 for i in range(num):

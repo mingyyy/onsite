@@ -8,5 +8,14 @@ Take two numbers from the user, an upper and lower bound. Using a loop, calculat
 		The average is: 50.5
 '''
 
-input_u = input("Please enter a number as the upper bound:")
-input_l = input("Please enter a number as the lower bound:")
+input_u = int(input("Please enter an integer as the upper bound:"))
+input_l = int(input("Please enter an integer as the lower bound:"))
+s = 0
+if input_u < input_l:
+    print("You upper bound is smaller than your lower bound, please re-enter!")
+else:
+    for i in range(input_l, input_u+1, 1):
+        s += i
+    print(f"The sum is: {s}")
+    print(f"The average is: {s/(input_u-input_l+1)}")
+
