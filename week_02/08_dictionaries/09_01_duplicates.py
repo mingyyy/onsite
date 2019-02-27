@@ -5,7 +5,7 @@ once.
 '''
 
 
-def has_duplicates(l):
+def has_duplicates(l): # l is parameter, while lis is the argument
     '''
     This function takes in a list
     :return: True if there is any element duplicated
@@ -17,8 +17,8 @@ def has_duplicates(l):
         return True
 
 
-l = [1,2,3,4,5,3]
-print(has_duplicates(l))
+lis = [1,2,3,4,5,2]
+print(has_duplicates(lis))
 
 
 
