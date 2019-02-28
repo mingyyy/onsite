@@ -10,7 +10,10 @@ def stat(l):
     :param l: a list of numbers
     :return: the max, min, mean and sum of the numbers in the list
     """
-    maxi = mini = avg = summ = 0.0
+
+    ### chained assignment should be avoided: maxi = mini = avg = summ = 0.0
+
+    maxi, mini, avg, summ = 0.0, 0.0, 0.0, 0.0
     for i in l:
         maxi = mini = i
         if i > maxi:

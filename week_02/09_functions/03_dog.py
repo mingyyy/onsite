@@ -7,6 +7,8 @@ Write a program with the following three functions:
 
 '''
 import time
+
+
 def bark():
     return "bark bark"
 
