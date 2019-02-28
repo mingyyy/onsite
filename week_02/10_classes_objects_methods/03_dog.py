@@ -27,7 +27,7 @@ Building on the dog exercise in the previous section:
 '''
 
 
-class dog:
+class Dog:
     def __init__(self, name, color, age, is_hungry=False, percent_full=100):
         """
         This dog class defines some aspects of the dog.
@@ -70,7 +70,7 @@ class dog:
 
 if __name__ == '__main__':
 
-    lucy = dog("Lucy","black and white", 5, False, 80)
+    lucy = Dog("Lucy","black and white", 5, False, 80)
     lucy.sleep()
     lucy.str()
     lucy.eat()
