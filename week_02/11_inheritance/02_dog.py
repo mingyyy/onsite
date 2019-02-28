@@ -7,4 +7,6 @@ slightly different.
 Create and object of this class and demonstrate it's functionality.
 
 '''
-
+# some_file.py
+# import sys
+# sys.path.insert(0, '/Users/Ming/Documents/CodingNomads/python-onsite/week_02/10_classes_objects_methods')

@@ -7,6 +7,7 @@ Write a program with the following three functions:
 
 '''
 import time
+# from time import sleep
 
 
 def bark():
@@ -21,10 +22,10 @@ def sleep():
     time.sleep(5)
 
 # The following program does the following: if you don't feed the dog, it will bark
-# if you do, it will sleep for 5 mins
+# if you do, it will sleep for 5 secs
 flag = True
 while flag:
-    bark()
+    print(bark())
     ans = input("Do you want to feed the dog (yes/no):")
     if ans == 'yes':
         food = input("What do you want to feed the dog?")

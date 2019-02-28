@@ -9,9 +9,9 @@ def BS_vanilla(s, t, k, r, vol):
     C = s N(d1) - N(d2)* k * exp(-rt)
 
     :param s: current stock price
-    :param t: time to maturity
+    :param t: time to maturity in years
     :param k: strike
-    :param r: risk free rate
+    :param r: annualized risk free rate, continuously compounded
     :param vol: volatility
     :return: call option price
     '''
@@ -22,7 +22,7 @@ def BS_vanilla(s, t, k, r, vol):
 
 def N(d):
     '''
-    cumulative standard normal distribution
+    standard normal cumulative distribution function
     :param: d is function of s, k, r, s, vol
     :return: cum Normal
     '''
@@ -62,27 +62,25 @@ def d(s, t, k, r, vol, d1=1):
 '''
 stock price = 100
 ttm = 1 year
-strike = 90
+strike = 100
 r = 2%
 vol = 0.2
+
+* checking the price with online calculator
+https://www.mystockoptions.com/black-scholes.cfm?ticker=&s=100&x=100&t=1&r=2%25&v=20%25&calculate=Calculate
+C= 8.916
 '''
 
 print(d(100, 1, 90, 0.02, 0.2, True))
-print(BS_vanilla(100, 1, 90, 0.02, 0.2))
-
-
-
-
-
-
+print(BS_vanilla(100, 1, 100, 0.02, 0.2))
 
 
 # from stack overflow
 def normcdf(x, mu, sigma):
-    t = x-mu;
-    y = 0.5*math.erfc(-t/(sigma*math.sqrt(2.0)));
+    t = x-mu
+    y = 0.5*math.erfc(-t/(sigma*math.sqrt(2.0)))
     if y>1.0:
-        y = 1.0;
+        y = 1.0
     return y
 
 

@@ -22,11 +22,12 @@ def Random_HashTag(word):
     # wl.close()
     w = []
     for x in wordlist:
-        if x[:len(word)] == str(word):
-            w.append("#" + str(x))
-        elif x[-len(word):] == str(word):
-            w.append("#" + str(x))
-
+        # if x[:len(word)] == str(word):
+        #     w.append("#" + str(x))
+        # elif x[-len(word):] == str(word):
+        #     w.append("#" + str(x))
+        if word in x:
+            w.append("#" + x)
     return w
 
 print(Random_HashTag("caden"))
