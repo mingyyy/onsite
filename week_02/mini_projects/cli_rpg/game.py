@@ -21,12 +21,17 @@ def print_rules():
 
 
 The lands of Codingnomads are under alien attack in year 
-2030. You are the general of the United 
-the chosen one who shall venture through the forests of
-the web to defeat what lurks a few links off Google's main
-results. The wwworld needs you to restore peaceful linking
-to the internet...
+2020. You are the leader of the United Action Squad. Your
+best friend is the lead scientist who just developed some 
+magical pills which can transform you to the hero we need!
+Unfortunately your friend went missing before he could tell
+you which pill does what...
 
+You have received three bottles in a parcel sent to outpost,
+First one read: Fisib
+Second one says: Musbit
+The last one shows: Drog
+....................The choice is your....................
 """)
 
 

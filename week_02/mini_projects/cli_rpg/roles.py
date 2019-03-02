@@ -1,18 +1,23 @@
 import random as rd
 import math as m
 
+hero_list = {"Fisib": "You can fly and be invisible.", "Musbit":
+    "You have superb physical strength and hacker skills",
+             "Drog": "You can turn to a fire dragon with invisible skins."}
+
+
 class Hero:
     '''Defines the role of Heros'''
-    hero_list = ["feriro","negari","rapidee","dargonniang", "hacker"]
-    def __init__(self, name, user_input=0):
-        self.name = name
+    def __init__(self, user_input="Fisib"):
         self.user_input = user_input
-        if int(self.user_input) not in [0,1,2,3,4]:
-            self.user_input = 0
-        self.user_input = self.hero_list[int(self.user_input)]
+        x=""
+        if self.user_input.capitalize() not in ["Fisib", "Musbit", "Drog"]:
+            self.user_input = "Fisib"
+        self.x = hero_list[self.user_input.capitalize()]
 
     def __repr__(self):
-        return f"You are our hero: {self.name}! But you are called {self.user_input} now! "
+        return f"You are our hero: {self.user_input} now! {self.x}"
+
 
 class Sidekick:
     '''Defines the role of Sidekicks'''
@@ -23,6 +28,21 @@ class Sidekick:
     def __str__(self):
         return f'You sidekick is {self.nickname} who can {self.function}.'
 
+
+def Sidekick_effect(hero, side):
+    '''Testing what effect the sidekick will have on the hero
+    inputs: hero instance, sidekick instance
+    '''
+    if 20 >len(Sidekick.function) > 10:
+        Alien.IQ /= 2
+    elif len(Sidekick.function)< 5:
+        Alien.energy = m.log10(Alien.energy)
+    elif 5 < len(Sidekick.function) < 10:
+        Alien.energy = m.log2(Alien.energy)
+    elif len(Sidekick.function) == 5 or len(Sidekick.function) ==10:
+        Alien.IQ /=10
+
+
 class Alien:
     '''Defines the role of Villains'''
     IQ_level = []
@@ -31,26 +51,27 @@ class Alien:
     weakness_list = ["scorpio", "gelato", "tempeh", "water", "coding", "nothing"]
     x = 10 #complexity
 
-    for i in range(x): # define the options for different combinations
-        IQ_level.append((i+1) * (x**2))
-        power_level.append(m.exp((i/2)*m.sqrt(x)))
-        energy_level.append(m.pi ** (m.sqrt(x)))
 
-    def __init__(self, name, energy=100, power=100, IQ=1000):
+    def __init__(self, name, energy=100, IQ=1000, weakness="nothing"):
         self.name = name
         self.energy = energy
-        self.power = power
         self.IQ = IQ
+        self.weakness = weakness
 
-    def __str__(self):
-        self.power = rd.choice(self.power_level)
         self.weakness_list = rd.choice(self.weakness_list)
         self.energy = rd.choice(self.energy_level)
         self.IQ = rd.choice(self.IQ_level)
-        w = rd.choice(self.weakness_list)
+        self.weakness = rd.choice(self.weakness_list)
+
+    for i in range(x): # define the options for different combinations
+        IQ_level.append((i+1) * (x**2))
+        energy_level.append(m.pi ** (m.sqrt(x)))
+
+    def __str__(self):
+
         return f'{self.name} is an alien with an IQ level of {int(self.IQ)}, ' \
-            f'power level of {int(self.power)}, and energy level of {int(self.energy)}, ' \
-            f'who is afraid of {rd.choice( ["scorpio", "gelato", "tempeh", "water", "coding", "nothing"])}.'
+            f'and energy level of {int(self.energy)}, ' \
+            f'who is afraid of {self.weakness}.'
 
 
 # subclasses
@@ -72,15 +93,11 @@ class Experience(Alien):
         self.num_of_battle = num_of_battle
 
 
-
-
-
-
 martin = Alien("Mr. Martin")
 print(martin)
 
-mel = Hero("casey", 7)
+mel = Hero("fab")
 print(mel)
 
-seb = Sidekick("Seleni","escape into thin air")
+seb = Sidekick("Sadie","vanish into thin air")
 print(seb)
