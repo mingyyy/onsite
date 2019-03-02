@@ -19,13 +19,13 @@ class Point:
         if (self.x, self.y) == (0,0):
             return "A point in origin."
         elif self.x > 0 and self.y > 0:
-            return "A point in quadrant 1."
-        elif self.x > 0 and self.y < 0:
-            return "A point in quadrant 4."
-        elif self.x < 0 and self.y > 0:
-            return "A point in quadrant 2."
+            return f"A point in quadrant 1, with the coordinate ({self.x}, {self.y})."
+        elif self.x > 0 > self.y:
+            return f"A point in quadrant 4, with the coordinate ({self.x}, {self.y})."
+        elif self.x < 0 < self.y:
+            return f"A point in quadrant 2, with the coordinate ({self.x}, {self.y})."
         elif self.x < 0 and self.y < 0:
-            return "A point in quadrant 3."
+            return f"A point in quadrant 3, with the coordinate ({self.x}, {self.y})."
 
     def __lt__(self, other):
         return (self.x, self.y) < (other.x, other.y)
@@ -37,7 +37,7 @@ class Point:
         return not (self == other)
 
     def __le__(self, other):
-        return ((self.x, self.y) <= (other.x, other.y))
+        return (self.x, self.y) <= (other.x, other.y)
 
     def distance(self, other):
         return ((self.x - other.x) ** 2 + (self.y - other.y) ** 2) ** 0.5
@@ -69,3 +69,31 @@ print(p3.distance(p2))
 
 print(p1.line(p2))
 print(p2.line(p4))
+
+class Rectangle:
+    '''
+    four corners of the rectangle are defined as c1, c2, c3, c4, where c1 = left down
+    c2 = left up, c3 = right up, c4 = right down
+    c is the center point
+    '''
+    def __init__(self, width, length, leftdown=[0,0]):
+        self.width = width
+        self.length = length
+        self.leftdown = leftdown
+
+    def area(self):
+        return self.width * self.length
+
+    def circumference(self):
+        return 2*(self.width+self.length)
+
+    def find_center(self, v_h = True):
+        if v_h is False:
+            x = Point(self.leftdown[0] + self.length/2, self.leftdown[1] + self.width/2)
+        else:
+            x = Point(self.leftdown[0] + self.width/2, self.leftdown[1] + self.length/2)
+        return x
+
+
+r = Rectangle(2, 3, [0,0])
+print(r.find_center())
