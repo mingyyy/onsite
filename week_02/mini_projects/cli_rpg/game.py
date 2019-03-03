@@ -1,7 +1,7 @@
 
 import random as rd
 import datetime as dt
-from roles import Hero, Sidekick, Alien, Sidekick_effect
+from roles import Hero, Sidekick, Alien, sidekick_effect
 
 
 def main():
@@ -70,9 +70,9 @@ def play():
             you.power /= max(rd.choice([.05, 0.1, 0.5, 1, 1,2, 1,5, 2, 3, 4]),0)
             alien.energy = max(alien.energy+rd.randint(-5, 10), 0)
             if sidekick_here is True:
-                Sidekick_effect(alien, helper)
+                sidekick_effect(alien, helper)
                 print("With the help of your sidekick...")
-                print(Sidekick_effect(alien, helper))
+                print(sidekick_effect(alien, helper))
                 print(f"You, on the other hand, have power of {int(you.power)}. ")
             else:
                 # display the status of you and your enemy

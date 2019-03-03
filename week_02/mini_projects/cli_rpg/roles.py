@@ -37,7 +37,7 @@ class Sidekick:
         return f'You sidekick is {self.nickname} who can {self.function}.'
 
 
-def Sidekick_effect(alien, side):
+def sidekick_effect(alien, side):
     '''Testing what effect the sidekick will have on the hero
     inputs: hero instance, sidekick instance
     '''
@@ -111,5 +111,5 @@ print(mel)
 seb = Sidekick("Sadie","vanish into thin air")
 print(seb)
 
-print(Sidekick_effect(martin, seb))
+print(sidekick_effect(martin, seb))
 
