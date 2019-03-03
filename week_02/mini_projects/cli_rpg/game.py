@@ -1,7 +1,7 @@
 
 import random as rd
 import datetime as dt
-from roles import Hero, Sidekick, Alien, sidekick_effect
+from roles import Hero, Sidekick, Alien, sidekick_effect, alien_purpose
 
 
 def main():
@@ -67,7 +67,7 @@ def play():
             """)
         user_input = input("Enter your choice (1 for Attack, 2 for Run, 3 for help) ")
         if user_input == "1":
-            you.power /= max(rd.choice([.05, 0.1, 0.5, 1, 1,2, 1,5, 2, 3, 4]),0)
+            you.power /= max(rd.choice([.05, 0.1, 0.5, 1, 1.2, 1.5, 2, 2.5, 3, 4, 5]),0)
             alien.energy = max(alien.energy+rd.randint(-5, 10), 0)
             if sidekick_here is True:
                 sidekick_effect(alien, helper)
@@ -81,7 +81,7 @@ def play():
             if int(alien.IQ / 5) + int(alien.energy) > int(you.power) >= int(alien.energy):
                 print(f"You are kicking his ass! but the Alien is very smart with an IQ of {int(alien.IQ)}.")
             elif int(you.power) < int(alien.energy):
-                print("Ohhhh, Noooooo.........\nYou are not his match right now! Sorry...You can try again though.")
+                print("Ohhhh, Noooooooooooooo\nYou are not his match right now! Sorry...You can try again though.")
                 continue
 
         elif user_input == "2":
@@ -114,10 +114,14 @@ def play():
                 print(f"From now on, you will be accompanied by your friend {name}! Bravo!")
             elif user_input == "2":
                 print("Your bravery just gained you a chance to destroy him for good!")
-                user_input = input("Pleaes give me a number from 1 to 10: ")
+                user_input = input("Please give me a number from 1 to 10: ")
                 if alien.weakness == int(user_input):
                     print("Wowowow! You have found the weakness!")
                     find_weakness = True
+                elif alien.weakness in [int(user_input)+1, int(user_input)-1]:
+                    print("Good job! Although you have not found the weakness of the alien "
+                          "but you discovered something else...")
+                    print(alien_purpose(alien, int(user_input)))
                 else:
                     print("Sorry, maybe you will find it next time!")
             else:

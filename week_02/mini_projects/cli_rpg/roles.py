@@ -83,23 +83,33 @@ class Alien:
             f'and energy level of {int(self.energy)}. Also very ugly!'
 
 
-# subclasses
-class Weapon(Alien):
-    def __init__(self,name, use):
-        super().__init__(self, name)
-        self.use = use
+# sub classes: different aliens with different purposes
+class Minerals(Alien):
+    def __str__(self):
+        return f"Alien is here for our minerals."
 
 
-class Military(Alien):
-    def __init__(self, name, rank):
-        super().__init__(self, name)
-        self.rank = rank
+class Military(Alien): # conquer other planet
+    def __str__(self):
+        return f"Alien is here to conquer our world and won't stop."
 
 
-class Experience(Alien):
-    def __init__(self, name, num_of_battle):
-        super().__init__(self, name)
-        self.num_of_battle = num_of_battle
+class Training(Alien): # sending troops for training
+    def __str__(self):
+        return f"Alien is here to train their soldiers."
+
+
+def alien_purpose(alien, user_input):
+    if user_input <= 3:
+        alien = Minerals(alien.name)
+    elif user_input <= 6:
+        alien = Military(alien.name)
+    else:
+        alien = Training(alien.name)
+    return alien
+
+
+
 
 
 martin = Alien("Mr. Martin")
