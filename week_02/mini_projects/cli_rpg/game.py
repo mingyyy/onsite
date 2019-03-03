@@ -10,22 +10,22 @@ def main():
 
 def print_rules():
     print("""
-**********************************************************
-**********************************************************
-**********************************************************
-**********************************************************
-************ Welcome to the world of ALIENs! *************
-**********************************************************
-**********************************************************
-**********************************************************
-
+***********************************************************
+***********************************************************
+***********************************************************
+***********************************************************
+************ Welcome to the world of ALIENs! **************
+***********************************************************
+***********************************************************
+***********************************************************
+***********************************************************
 
 The lands of Codingnomads are under alien attack in year 
 2020. You are the leader of the United Action Squad. Your
 best friend is the lead scientist who just developed some 
-magical pills which can transform you to the hero we need!
-Unfortunately your friend went missing before he could tell
-you which pill does what...
+magical pills which can transform you into the hero we need!
+Unfortunately, your friend went missing before he could 
+tell you which pill does what...
 
 You have received three bottles in a parcel sent to Outpost,
 1. First one read: Fisib
@@ -55,7 +55,7 @@ def play():
 
     find_weakness = False
     sidekick_here = False
-    while int(alien.IQ / 10) + int(alien.energy) > int(you.power) and find_weakness is False:
+    while int(alien.IQ / 5) + int(alien.energy) > int(you.power) and find_weakness is False:
         print("""
             --------------------------------------------------------------
             Now, Alien is here!!!!!
@@ -76,9 +76,9 @@ def play():
                 print(f"You, on the other hand, have power of {int(you.power)}. ")
             else:
                 # display the status of you and your enemy
-                print(f"Alien now has and of IQ {int(alien.IQ)} and energy level of {int(alien.energy)}, "
+                print(f"Alien now has an IQ of {int(alien.IQ)} and energy level of {int(alien.energy)}, "
                       f"while you have power of {int(you.power)}.")
-            if int(alien.IQ / 10) + int(alien.energy) > int(you.power) >= int(alien.energy):
+            if int(alien.IQ / 5) + int(alien.energy) > int(you.power) >= int(alien.energy):
                 print(f"You are kicking his ass! but the Alien is very smart with an IQ of {int(alien.IQ)}.")
             elif int(you.power) < int(alien.energy):
                 print("Ohhhh, Noooooo.........\nYou are not his match right now! Sorry...You can try again though.")
