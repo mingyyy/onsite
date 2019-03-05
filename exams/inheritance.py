@@ -21,18 +21,20 @@ CLASSES AND INHERITANCE
 
 
 class Movie:
+
     def __init__(self, year, title):
         self.year = year
         self.title = title
 
 
-class RomCom:
+class RomCom(Movie):
     pass
 
 
-class ActionMovie:
-    def __init__(self, year, title, pg = 13):
+class ActionMovie(Movie):
+
+    def __init__(self, year, title, pg=13):
         super().__init__(year, title)
         self.pg = pg
+            
 
-    
