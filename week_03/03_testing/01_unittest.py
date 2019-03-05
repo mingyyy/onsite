@@ -7,3 +7,8 @@ test should pass.
 Also include a test that does not pass.
 
 '''
+
+
+# function in class Employee, company.py
+# test_employee.py
+# 4 tests OK, 1 test fails

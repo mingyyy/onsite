@@ -15,7 +15,7 @@ import os
 path = "/Users/Ming/Documents/Omneia"
 
 alist = []
-#path = "/Users/Ming/Documents/CodingNomads/"
+# finding all the possible suffix store them in alist
 try:
     for d in [x[0] for x in os.walk(path)]:
         try:
@@ -27,6 +27,7 @@ except IndexError:
     print("No folder like that.")
 
 alist = set(alist)
+# look for files based on alist.
 try:
     for d in [x[0] for x in os.walk(path)]:
         try:

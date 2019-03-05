@@ -42,8 +42,7 @@ except IndexError:
     print("No folder like that.")
 
 #print(checkdup.check_pairs(file_list))
-
-# d = checkdup.compute_checksums(path, suffix='.pdf')
+d = checkdup.compute_checksums(path, suffix='.pdf')
 # checkdup.print_duplicates(d)
 d = {}
 l = []

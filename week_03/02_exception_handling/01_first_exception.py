@@ -13,9 +13,9 @@ import math
 try:
     ans = float(input("Enter a number please: "))
     print(math.log10(ans))
-except TypeError:
-    print("Number ONLY!")
-except ValueError:
-    print("Not valid, please enter another number!")
+except TypeError as err:
+    print(f"Number ONLY!: {err}")
+except ValueError as fnf:
+    print(f"Not valid, please enter another number!: {fnf}")
 
 
