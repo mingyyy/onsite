@@ -64,8 +64,6 @@ def pipe(cmd):
     # subprocess more complicated than necessary.  So I am going
     # to keep using os.popen until they take it away.
 
-    #cmd = "ls -s"
-
     fp = os.popen(cmd)
     res = fp.read()
     stat = fp.close()

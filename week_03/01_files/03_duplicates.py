@@ -20,55 +20,44 @@ http://greenteapress.com/thinkpython2/html/thinkpython2015.html
 
 '''
 import os
-
-
-def compute_checksum(filename):
-    """Computes the MD5 checksum of the contents of a file.
-
-    filename: string
-    """
-    cmd = 'md5sum ' + filename
-    return pipe(cmd)
-
-
-def pipe(cmd):
-    """Runs a command in a subprocess.
-
-    cmd: string Unix command
-
-    Returns (res, stat), the output of the subprocess and the exit status.
-    """
-    # Note: os.popen is deprecated
-    # now, which means we are supposed to stop using it and start using
-    # the subprocess module.  But for simple cases, I find
-    # subprocess more complicated than necessary.  So I am going
-    # to keep using os.popen until they take it away.
-
-    cmd = 'ls -s'
-    fp = os.popen(cmd)
-    res = fp.read()
-    stat = fp.close()
-    assert stat is None
-    return res, stat
-
-# looking for all txt files under CodingNomads
-
+import check_duplicates as checkdup
 
 path = "/Users/Ming/Documents/Omneia"
-
-
+file_list = []
+res_list = []
 #path = "/Users/Ming/Documents/CodingNomads/"
 try:
     for d in [x[0] for x in os.walk(path)]:
         try:
             for i in os.listdir(d):
                 if i.split(".")[1] == "pdf":
-                    print(d+"/"+i)
-                    print(compute_checksum(d+"/"+i))
+                    file = os.path.join(d, i)
+                    file_list.append(file)
+                    #print(file)
+                    #print(checkdup.compute_checksum(file))
+                    res_list.append(checkdup.compute_checksum(file))
         except IndexError:
             pass
 except IndexError:
     print("No folder like that.")
 
-# l = [x[0] for x in os.walk(path)]
-# print(l)
+#print(checkdup.check_pairs(file_list))
+
+# d = checkdup.compute_checksums(path, suffix='.pdf')
+# checkdup.print_duplicates(d)
+d = {}
+l = []
+for i in res_list:
+    x=i[0].split()
+    d[x[1]]= x[0]
+print(d)
+
+for k1, v1 in d.items():
+    v = v1
+    k = k1
+    for k2, v2 in d.items():
+        if v == v2 and k != k2:
+            l.append(k)
+            l.append(k2)
+print("Duplicates are: \n",set(l))
+
