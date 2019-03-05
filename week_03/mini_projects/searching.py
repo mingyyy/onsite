@@ -9,3 +9,33 @@ folder name with a bigger folder. This program should work for any specified fol
 
 
 '''
+
+import os
+
+path = "/Users/Ming/Documents/Omneia"
+
+alist = []
+#path = "/Users/Ming/Documents/CodingNomads/"
+try:
+    for d in [x[0] for x in os.walk(path)]:
+        try:
+            for i in os.listdir(d):
+                alist.append(i.split(".")[1].lower())
+        except IndexError:
+            pass
+except IndexError:
+    print("No folder like that.")
+
+alist = set(alist)
+try:
+    for d in [x[0] for x in os.walk(path)]:
+        try:
+            for j in alist:
+                print(f"{j} has the following:")
+                for i in os.listdir(d):
+                    if i.split(".")[1].lower() == j:
+                        print(d + "/" + i)
+        except IndexError:
+            pass
+except IndexError:
+    print("No folder like that.")

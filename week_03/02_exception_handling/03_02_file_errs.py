@@ -6,3 +6,16 @@ with specific except statements, and continue to do the calculation
 only if neither of them applies.
 
 '''
+import math
+
+
+try:
+    with open("integers.txt") as f:
+        try:
+            x = int(f.readline())
+        except ValueError:
+            print("It should be a number! Check the file.")
+        else:
+            print(math.log10(x))
+except IOError:
+    print("Can't open it. YOu don't have permission.")

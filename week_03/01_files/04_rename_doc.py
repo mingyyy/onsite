@@ -15,3 +15,26 @@ Source: Read through the "Files" chapter in Think Python 2e:
 http://greenteapress.com/thinkpython2/html/thinkpython2015.html
 
 '''
+
+
+def sed(ps, rs, file1, file2):
+    try:
+        with open(file1, "r") as f:
+            lines = f.read()
+    except FileNotFoundError:
+        print("Can't find this file. Please make sure it exist in this folder. ")
+    else:
+        newline = ""
+        try:
+            newline = lines.replace(ps, rs)
+        except:
+            pass
+        else:
+            try:
+                with open(file2, "a") as fout:
+                    fout.write("\n" + newline)
+            except IndexError:
+                print("Bad file!")
+
+
+sed("Martin", "caden", "testing.txt", "new.txt" )

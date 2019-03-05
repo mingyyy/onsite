@@ -8,3 +8,14 @@ print(list_[1])
 This raises and exception that needs to be handled.
 
 '''
+import math
+
+try:
+    ans = float(input("Enter a number please: "))
+    print(math.log10(ans))
+except TypeError:
+    print("Number ONLY!")
+except ValueError:
+    print("Not valid, please enter another number!")
+
+
