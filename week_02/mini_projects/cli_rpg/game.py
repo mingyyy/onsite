@@ -8,6 +8,7 @@ def main():
     print_rules()
     play()
 
+
 def print_rules():
     print("""
 ***********************************************************

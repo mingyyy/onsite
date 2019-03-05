@@ -11,6 +11,7 @@ Take two numbers from the user, an upper and lower bound. Using a loop, calculat
 input_u = int(input("Please enter an integer as the upper bound:"))
 input_l = int(input("Please enter an integer as the lower bound:"))
 s = 0
+
 if input_u < input_l:
     print("You upper bound is smaller than your lower bound, please re-enter!")
 else:
@@ -18,4 +19,3 @@ else:
         s += i
     print(f"The sum is: {s}")
     print(f"The average is: {s/(input_u-input_l+1)}")
-

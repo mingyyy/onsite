@@ -109,17 +109,15 @@ def alien_purpose(alien, user_input):
     return alien
 
 
+if  __name__ == "__main__":
+    martin = Alien("Mr. Martin")
+    print(martin)
 
+    mel = Hero("fab")
+    print(mel)
 
+    seb = Sidekick("Sadie","vanish into thin air")
+    print(seb)
 
-martin = Alien("Mr. Martin")
-print(martin)
-
-mel = Hero("fab")
-print(mel)
-
-seb = Sidekick("Sadie","vanish into thin air")
-print(seb)
-
-print(sidekick_effect(martin, seb))
+    print(sidekick_effect(martin, seb))
 
