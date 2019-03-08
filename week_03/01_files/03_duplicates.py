@@ -25,7 +25,7 @@ import check_duplicates as checkdup
 path = "/Users/Ming/Documents/Omneia"
 file_list = []
 res_list = []
-#path = "/Users/Ming/Documents/CodingNomads/"
+# path = "/Users/Ming/Documents/CodingNomads/"
 try:
     for d in [x[0] for x in os.walk(path)]:
         try:
@@ -33,8 +33,7 @@ try:
                 if i.split(".")[1] == "pdf":
                     file = os.path.join(d, i)
                     file_list.append(file)
-                    #print(file)
-                    #print(checkdup.compute_checksum(file))
+                    print(checkdup.compute_checksum(file))
                     res_list.append(checkdup.compute_checksum(file))
         except IndexError:
             pass
@@ -42,13 +41,13 @@ except IndexError:
     print("No folder like that.")
 
 #print(checkdup.check_pairs(file_list))
-d = checkdup.compute_checksums(path, suffix='.pdf')
+#d = checkdup.compute_checksums(path, suffix='.pdf')
 # checkdup.print_duplicates(d)
 d = {}
 l = []
 for i in res_list:
-    x=i[0].split()
-    d[x[1]]= x[0]
+    x = i[0].split()
+    d[x[1]] = x[0]
 print(d)
 
 for k1, v1 in d.items():
@@ -58,5 +57,5 @@ for k1, v1 in d.items():
         if v == v2 and k != k2:
             l.append(k)
             l.append(k2)
-print("Duplicates are: \n",set(l))
+print("Duplicates are: \n", set(l))
 

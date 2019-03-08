@@ -10,6 +10,7 @@ Tip: In UNIX systems you can access a dictionary file at this path:
 
 '''
 
+
 def Random_HashTag(word):
     '''
     This function generate some random HashTags based on your input
@@ -29,6 +30,7 @@ def Random_HashTag(word):
         if word in x:
             w.append("#" + x)
     return w
+
 
 print(Random_HashTag("caden"))
 print(Random_HashTag("martin"))

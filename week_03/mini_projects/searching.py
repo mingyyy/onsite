@@ -9,34 +9,46 @@ folder name with a bigger folder. This program should work for any specified fol
 
 
 '''
-
 import os
-
 path = "/Users/Ming/Documents/Omneia"
 
 alist = []
+adirectory = {}
 # finding all the possible suffix store them in alist
 try:
     for d in [x[0] for x in os.walk(path)]:
         try:
             for i in os.listdir(d):
-                alist.append(i.split(".")[1].lower())
+                extension = i.split(".")[1].lower()
+                if extension in alist:
+                    adirectory[extension] += ", " + os.path.join(d, i)
+                else:
+                    alist.append(extension)
+                    adirectory[extension] = os.path.join(d, i)
+                extension = ""
         except IndexError:
             pass
 except IndexError:
     print("No folder like that.")
 
-alist = set(alist)
-# look for files based on alist.
-try:
-    for d in [x[0] for x in os.walk(path)]:
-        try:
-            for j in alist:
-                print(f"{j} has the following:")
-                for i in os.listdir(d):
-                    if i.split(".")[1].lower() == j:
-                        print(d + "/" + i)
-        except IndexError:
-            pass
-except IndexError:
-    print("No folder like that.")
+print("list of extensions:", set(alist))
+for key, value in adirectory.items():
+    print(f"\nFor extension .{key}, the following files have been found under the path: ")
+    for file in value.split(","):
+        print(file.strip())
+
+# look for files based on alist. Somehow os.walk again won't show the sub-directory anymore???
+
+# try:
+#     for j in alist:
+#         print(j)
+#         try:
+#             for dire in [y[0] for y in os.walk(path)]:
+#                 # print(f"You have the following files with the extension .{j.upper()} under {dire}:")
+#                 for item in os.listdir(dire):
+#                     if item.split(".")[1].lower() == j:
+#                         print(os.path.join(dire,item))
+#         except IndexError:
+#             print("---")
+# except IndexError:
+#     print("please check your list of extensions.")

@@ -21,6 +21,7 @@ def eat(food_item, amount):
 def sleep():
     time.sleep(5)
 
+
 # The following program does the following: if you don't feed the dog, it will bark
 # if you do, it will sleep for 5 secs
 flag = True

@@ -12,9 +12,8 @@ n = 0
 with open("words.txt") as f:
     for line in f.readlines():
         n += 1
-        if shortest == []:
+        if n == 1:
             shortest.append(line.strip())
-        if longest == []:
             longest.append(line.strip())
         if len(line.strip()) < len(shortest[0]):
             shortest = []

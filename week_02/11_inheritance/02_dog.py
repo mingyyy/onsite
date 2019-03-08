@@ -10,6 +10,7 @@ Create and object of this class and demonstrate it's functionality.
 # import sys
 # sys.path.insert(0, '/Users/Ming/Documents/CodingNomads/python-onsite/week_02/10_classes_objects_methods')
 
+
 class Dog:
     def __init__(self, name, color, age, is_hungry=False, percent_full=100):
         """
@@ -33,13 +34,13 @@ class Dog:
             s = "not hungry"
         if self.age > 1:
             return print(f"{self.name} is a {self.age} years old {self.color} dog. "
-                     f"It's {s}, {self.percent_full}% full.")
+                         f"It's {s}, {self.percent_full}% full.")
         elif self.age == 1:
             return print(f"{self.name} is a {self.age} year old {self.color} dog. "
-                     f"It's {s}, {self.percent_full}% full.")
+                         f"It's {s}, {self.percent_full}% full.")
         else:
             return print(f"{self.name} is a {int(self.age*12)}-month old {self.color} dog. "
-                     f"It's {s}, {self.percent_full}% full.")
+                         f"It's {s}, {self.percent_full}% full.")
 
     def sleep(self):
         self.is_hungry = True
@@ -60,7 +61,7 @@ class Shepherd(Dog):
         self.origin = origin
 
     def sleep(self):
-        if self.training == True:
+        if self.training is True:
             self.is_hungry = True
             self.percent_full = max(0, self.percent_full-20)
             return f"The {self.breed} is in training and is {self.percent_full}% full!"
@@ -70,7 +71,7 @@ class Shepherd(Dog):
             return f"The {self.breed} is not in training and is {self.percent_full}% full!"
 
     def eat(self):
-        if self.training == True:
+        if self.training is True:
             self.is_hungry = False
             self.percent_full = 95
             return f"The {self.breed} is in training and is only {self.percent_full}% full!"
@@ -78,7 +79,6 @@ class Shepherd(Dog):
             self.is_hungry = False
             self.percent_full = 100
             return f"The {self.breed} is not in training and is completely full!"
-
 
 
 if __name__ == '__main__':

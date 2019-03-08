@@ -43,11 +43,9 @@ for better visual understanding and support in creating the stack diagram.
 def leap_year(y):
     """This function takes one input: year in the range 1900 and 100,000
     The output would be True if it is a leap year and False if it is no."""
-
     if y < 1900 or y > 10 ** 5:
         print("Please make sure your number is between 1900 and 100,000.")
         exit()
-
     if (y % 4 == 0 and y % 100 != 0) or y % 400 == 0:
         return True
     else:

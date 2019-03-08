@@ -11,7 +11,7 @@ def stat(l):
     :return: the max, min, mean and sum of the numbers in the list
     """
 
-    ### chained assignment should be avoided: maxi = mini = avg = summ = 0.0
+    # chained assignment should be avoided: maxi = mini = avg = summ = 0.0
 
     maxi, mini, avg, summ = 0.0, 0.0, 0.0, 0.0
     for i in l:
@@ -23,5 +23,6 @@ def stat(l):
         summ += i
     avg = summ / len(l)
     return maxi, mini, avg, summ
+
 
 print(stat([1,2,3,4,5]))

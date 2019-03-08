@@ -4,6 +4,7 @@ at least one other function and use the return value to do something.
 '''
 import math
 
+
 def BS_vanilla(s, t, k, r, vol):
     '''
     C = s N(d1) - N(d2)* k * exp(-rt)
@@ -37,7 +38,7 @@ def erfcc(x):
         t*(.09678418+t*(-.18628806+t*(.27886807+
         t*(-1.13520398+t*(1.48851587+t*(-.82215223+
         t*.17087277)))))))))
-    if (x >= 0.):
+    if x >= 0.:
         return r
     else:
         return 2. - r
@@ -54,7 +55,7 @@ def d(s, t, k, r, vol, d1=1):
     :param d1 = 1 indicate it is the first d, otherwise d = 2
     :return: call option price
     """
-    x = math.log(s/k + (r + vol ** 2/2)* t)/(vol * t ** 0.5)
+    x = math.log(s/k + (r + vol ** 2/2) * t)/(vol * t ** 0.5)
     if d1 != 1:
         x = x - vol * (t ** 0.5)
     return x

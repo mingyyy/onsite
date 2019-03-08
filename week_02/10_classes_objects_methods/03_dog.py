@@ -50,13 +50,13 @@ class Dog:
             s = "not hungry"
         if self.age > 1:
             return print(f"{self.name} is a {self.age} years old {self.color} dog. "
-                     f"It's {s}, {self.percent_full}% full.")
+                         f"It's {s}, {self.percent_full}% full.")
         elif self.age == 1:
             return print(f"{self.name} is a {self.age} year old {self.color} dog. "
-                     f"It's {s}, {self.percent_full}% full.")
+                         f"It's {s}, {self.percent_full}% full.")
         else:
             return print(f"{self.name} is a {int(self.age*12)}-month old {self.color} dog. "
-                     f"It's {s}, {self.percent_full}% full.")
+                         f"It's {s}, {self.percent_full}% full.")
 
     def sleep(self):
         self.is_hungry = True
@@ -68,11 +68,10 @@ class Dog:
         self.percent_full = 100
         return print(f"The dog is not hungry at all! ")
 
+
 if __name__ == '__main__':
 
     lucy = Dog("Lucy","black and white", 5, False, 80)
     lucy.sleep()
     lucy.str()
     lucy.eat()
-
-

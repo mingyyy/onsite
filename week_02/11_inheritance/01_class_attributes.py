@@ -15,6 +15,7 @@ class Codingnomads:
     :param topic is what the class talks about
     '''
     instructors = ["martin", "roi", "caden"]
+
     def __init__(self, topic, max_size=12, start_date=d.today(), length=90):
         self.max_size = max_size
         self.start_date = start_date
@@ -38,6 +39,7 @@ class Instructor(Codingnomads):
     def __str__(self):
         return f"{self.name} is a {self.topic} instructor, working with Codingnomads and eating {self.diet} only."
 
+
 class Tasks(Instructor):
 
     # define an __init__() method that sets an attribute z and calls the __init__() method of its parent
@@ -46,10 +48,8 @@ class Tasks(Instructor):
         self.args = args
 
     def __str__(self):
-        l=""
-        for i in self.args:
-            l += str(i)
-        return f"{self.name} from {self.nationality} has the following task:" + l
+        #l = [str(i).capitalize() for i in self.args]
+        return f"{self.name} from {self.nationality} has the following task for {self.topic}:{self.args}."
 
 
 # create an object of each class and print each of its attributes
@@ -59,5 +59,5 @@ print(python)
 martin = Instructor("SQL", "Mr. Martin", "Austrian")
 print(martin)
 
-daily= Tasks("Java", "Roi", "Spanish", ["code review",'lecture',"exams"])
+daily = Tasks("Java", "Roi", "Spain", "code review",'lecture',"exams")
 print(daily)

@@ -7,7 +7,6 @@ LASTNAME, Name           Office supply item
 LONGERLASTNAME, Name     Office supply item
 
 '''
-
 office = [
     {"full_name": "Michael Scott", "item": "world's best boss mug"},
     {"full_name": "Dwight Schrute", "item": "pepper spray"},
@@ -25,3 +24,17 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+n = []
+for i in office:
+    for key, value in i.items():
+        if key == "full_name":
+            n.append(len(value))
+n.sort(reverse=True)
+max_length = n[0]
+
+for i in office:
+    for key, value in i.items():
+        if key == "full_name":
+            print(f"{value.split()[1].upper()}, {value.split()[0].capitalize()}", end=" "*(max_length-len(value)+4))
+        else:
+            print(f"{value.capitalize()}")

@@ -21,6 +21,7 @@ import sys
 import anagram_sets as a
 import anagram_db as adb
 
+
 def store_anagrams(word, anagram_map):
 
     """Stores the anagrams from a dictionary in a shelf.

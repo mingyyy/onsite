@@ -13,7 +13,7 @@ The output should look something like this:
 	10|20|30|40|50|60|70|80|90|100|
 
 '''
-# x = 10
+# working solution for this matrix
 # # for j in range(1,x+1, 1):
 # #     for i in range(j, (x+1)*j, j):
 # #         if i < 10 or (i % (10*j)== 0 and i != 100):
@@ -23,13 +23,11 @@ The output should look something like this:
 # #         print(num + "|",  end= "")
 # #     print("")
 
-
-x = 50
-num = 0
-for j in range(1,x+1,1):
-    for i in range(j,(x+1)*j,j):
-        if len(str(x*i/j)) > len(str(i)):
-            num = str(i) + " " * (len(str(x*i/j)) - len(str(i))-2)
-        print(num + "|",  end="")
+# A generic solution for this kind of matrix
+x, num = 18, 0
+for j in range(1, x + 1):
+    for i in range(j, (x + 1) * j, j):
+        if len(str(x * i/j)) > len(str(i)):
+            num = str(i) + " " * (len(str(x * i / j)) - len(str(i)) - 2)
+        print(num + "|", end="")
     print("")
-

@@ -12,7 +12,7 @@ class Hero:
 
     def __init__(self, user_input="Fisib"):
         self.user_input = user_input
-        x=""
+        x = ""
         if self.user_input.capitalize() not in ["Fisib", "Musbit", "Drog"]:
             self.user_input = "Fisib"
         self.x = hero_list[self.user_input.capitalize()]
@@ -42,16 +42,16 @@ def sidekick_effect(alien, side):
     inputs: hero instance, sidekick instance
     '''
     if 20 >len(side.function) > 10:
-        alien.IQ /= 2
+        alien.iq /= 2
     elif len(side.function)< 5:
         alien.energy = m.log10(max(alien.energy, 1))
     elif 5 < len(side.function) < 10:
         alien.energy = m.log2(max(alien.energy, 1))
     elif len(side.function) == 5 or len(side.function) ==10:
-        alien.IQ /= 10
+        alien.iq /= 10
     else:
-        alien.IQ /= 3
-    return f"Alien now has an IQ of {int(alien.IQ)} and energey level of {int(alien.energy)}. "
+        alien.iq /= 3
+    return f"Alien now has an IQ of {int(alien.iq)} and energey level of {int(alien.energy)}. "
 
 
 class Alien:
@@ -59,27 +59,27 @@ class Alien:
     IQ_level = []
     power_level = []
     energy_level = []
-    #weakness_list = ["scorpio", "gelato", "tempeh", "water", "coding", "nothing"]
-    x = 10 #complexity
+    # weakness_list = ["scorpio", "gelato", "tempeh", "water", "coding", "nothing"]
+    x = 10 # complexity level
 
-    def __init__(self, name, energy=100, IQ=1000, weakness=0):
+    def __init__(self, name, energy=100, iq=1000, weakness=0):
         self.name = name
         self.energy = energy
-        self.IQ = IQ
+        self.iq = iq
         self.weakness = weakness
 
         self.energy = rd.choice(self.energy_level)
-        self.IQ = rd.choice(self.IQ_level)
+        self.iq = rd.choice(self.IQ_level)
         self.weakness = rd.randint(1, 10)
 
     # define the options for different combinations
-    i = rd.randint(1, 10)
+    i = rd.randint(1, x)
     IQ_level.append((i+1) * (x**2))
     energy_level.append(m.pi ** (m.sqrt(i)))
 
     def __str__(self):
 
-        return f'{self.name.capitalize()} is an alien with an IQ level of {int(self.IQ)}, ' \
+        return f'{self.name.capitalize()} is an alien with an IQ level of {int(self.iq)}, ' \
             f'and energy level of {int(self.energy)}. Also very ugly!'
 
 
@@ -109,7 +109,7 @@ def alien_purpose(alien, user_input):
     return alien
 
 
-if  __name__ == "__main__":
+if __name__ == "__main__":
     martin = Alien("Mr. Martin")
     print(martin)
 
@@ -120,4 +120,3 @@ if  __name__ == "__main__":
     print(seb)
 
     print(sidekick_effect(martin, seb))
-

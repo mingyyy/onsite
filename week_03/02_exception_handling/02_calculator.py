@@ -11,9 +11,8 @@ Test it and make sure it does not crash when you enter incorrect values.
 try:
     ans = input("Please enter two numbers, separated by comma:").split(",")
     a, b = ans
-    a = int(a)
-    b = int(b)
-    c = a/b
+    a, b = int(a), int(b)
+    print(a/b)
 except ZeroDivisionError:
     print("can't divide by zero!")
 except ValueError:

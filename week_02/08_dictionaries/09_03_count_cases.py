@@ -21,9 +21,9 @@ Example output:
 user = input("Please enter a string here: ")
 l = u = p = t = s = 0
 for i in user:
-    if i.islower() == True:
+    if i.islower() is True:
         l += 1
-    elif i.isupper() == True:
+    elif i.isupper() is True:
         u += 1
     elif i == "!":
         p += 1
@@ -32,16 +32,3 @@ for i in user:
     t += 1
 
 print(l, u, p, t-s)
-
-
-
-
-
-
-
-
-
-
-
-
-

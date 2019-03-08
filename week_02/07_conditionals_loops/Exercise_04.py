@@ -13,6 +13,5 @@ for i in range(1, 101, 2):
     if n+1 == i:
         l.append(i)
 
-
 print(f"There are {len(l)} prime numbers between 1 and 100:")
 print(l)

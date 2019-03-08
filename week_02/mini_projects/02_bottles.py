@@ -39,5 +39,3 @@ for i in range(num):
     print(repeat(i),"\n")
 print("No more bottles of beer on the wall, no more bottles of beer. \n"
       "Go to the store and buy some more, " + str(num) + " bottles of beer on the wall.")
-
-

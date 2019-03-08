@@ -56,7 +56,7 @@ def play():
 
     find_weakness = False
     sidekick_here = False
-    while int(alien.IQ / 5) + int(alien.energy) > int(you.power) and find_weakness is False:
+    while int(alien.iq / 5) + int(alien.energy) > int(you.power) and find_weakness is False:
         print("""
             --------------------------------------------------------------
             Now, Alien is here!!!!!
@@ -77,10 +77,10 @@ def play():
                 print(f"You, on the other hand, have power of {int(you.power)}. ")
             else:
                 # display the status of you and your enemy
-                print(f"Alien now has an IQ of {int(alien.IQ)} and energy level of {int(alien.energy)}, "
+                print(f"Alien now has an IQ of {int(alien.iq)} and energy level of {int(alien.energy)}, "
                       f"while you have power of {int(you.power)}.")
-            if int(alien.IQ / 5) + int(alien.energy) > int(you.power) >= int(alien.energy):
-                print(f"You are kicking his ass! but the Alien is very smart with an IQ of {int(alien.IQ)}.")
+            if int(alien.iq / 5) + int(alien.energy) > int(you.power) >= int(alien.energy):
+                print(f"You are kicking his ass! but the Alien is very smart with an IQ of {int(alien.iq)}.")
             elif int(you.power) < int(alien.energy):
                 print("Ohhhh, Noooooooooooooo\nYou are not his match right now! Sorry...You can try again though.")
                 continue
@@ -130,7 +130,8 @@ def play():
                 alien.energy += 1
                 print("Alien is getting stronger by the day!")
         elif user_input == "q":
-            find_weakness = True
+            print("Thank you for trying to help the land of Codingnomads. Hope to see you soon.")
+            break
         else:
             print("You are the chosen one! You have to do something! Luckily, "
                   "you have another chance before it's too late!")
@@ -139,8 +140,3 @@ def play():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-

@@ -13,4 +13,4 @@ while flag is True:
         print(int(ans))
         flag = False
     except ValueError:
-        print("Please re-enter.")
+        print("Sorry, not an integer. Please re-enter.")

@@ -23,8 +23,6 @@ for d in famous_quotes:
     for k, v in d.items():
         if k == "full_name":
             first_name, last_name = v.split(" ", 1)
-        elif k == "quote":
+        else:
             q = v.strip()
     print(f'"{q}" - {last_name}, {first_name}')
-
-

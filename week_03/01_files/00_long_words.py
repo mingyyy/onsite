@@ -13,4 +13,3 @@ with open("words.txt") as file_object:
 # f=open("new.txt")
 # stat= f.close()
 # assert stat is None
-

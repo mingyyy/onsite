@@ -15,18 +15,19 @@ try:
     for i in num_list:
         i = float(i)
 except TypeError:
-    print("Please make sure you enter only numbers")
-
+    print("Please make sure you enter only numbers!")
 
 num_list.sort()
-if len((num_list)) % 2 != 0:
+if len(num_list) % 2 != 0:
     num_list.append(0)
-print(num_list)
 result = []
+
+# looping method
 for i in range(int(len(num_list) / 2)):
     tup = []
     for j in range(2):
         tup.append(num_list[j + i * 2])
     result.append(tuple(tup))
-
+# list comprehension method
+# result = [num_list[i:i+2] for i in range(0, len(num_list), 2)]
 print(result)

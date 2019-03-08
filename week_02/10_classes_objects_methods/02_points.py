@@ -54,21 +54,23 @@ class Point:
         return s
 
 
-# Point(x, y)
-p1 = Point(0, 0)
-p2 = Point(3, 4)
-p3 = Point(-1, -1)
-p4 = Point(-5, 6)
+if __name__ == '__main__':
+    # Point(x, y)
+    p1 = Point(0, 0)
+    p2 = Point(3, 4)
+    p3 = Point(-1, -1)
+    p4 = Point(-5, 6)
 
-print(p1, p2, p3)
+    print(p1, p2, p3)
 
-print(p1.distance(p2))
-print(p1.distance(p3))
-print(p2.distance(p2))
-print(p3.distance(p2))
+    print(p1.distance(p2))
+    print(p1.distance(p3))
+    print(p2.distance(p2))
+    print(p3.distance(p2))
 
-print(p1.line(p2))
-print(p2.line(p4))
+    print(p1.line(p2))
+    print(p2.line(p4))
+
 
 class Rectangle:
     '''

@@ -13,8 +13,6 @@ if user_input in range(8):
 else:
     print(dates_list[7])
 
-
-
 # https://docs.python.org/3/library/datetime.html
 # import datetime
 # i = 1

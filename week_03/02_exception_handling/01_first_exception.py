@@ -17,5 +17,3 @@ except TypeError as err:
     print(f"Number ONLY!: {err}")
 except ValueError as fnf:
     print(f"Not valid, please enter another number!: {fnf}")
-
-

@@ -19,5 +19,3 @@ for a, b in dict_3.items():
 
 for a in dict_combine:
     print(a, dict_combine[a])
-
-
