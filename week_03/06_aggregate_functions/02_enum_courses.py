@@ -12,4 +12,4 @@ for i in range(len(courses)):
 
 classes = ['Intro', 'Intermediate', 'Advanced', 'Epic Hero']
 for num, course in enumerate(classes):
-    print(f"{num+1}. {course}")
+    print(f"{num+1}: {course} python")
