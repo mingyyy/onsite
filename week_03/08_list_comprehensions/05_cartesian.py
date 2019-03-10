@@ -9,4 +9,4 @@ Then open up your online shop ;)
 colors = ["neon orange", "spring green"]
 sizes = ["S", "M", "L"]
 
-print([c + "-" + s for c in colors for s in sizes])
+print([c + " - " + s for c in colors for s in sizes])

@@ -9,8 +9,8 @@ Build a simple aggregator function.
 def collection(*args):
     c = ""
     for x in args:
-        c += x
+        c += str(x).swapcase()
     return c
 
 
-print(collection("ubud", "bali", "indonesia"))
+print(collection("Ubud", "Bali", "Indonesia"))

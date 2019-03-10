@@ -7,7 +7,7 @@ and yields the element and its index
 '''
 
 
-def my_enumerate( *args, num=0):
+def my_enumerate(*args, num=0):
     y = 0
     x_list = {}
     for x in args:
