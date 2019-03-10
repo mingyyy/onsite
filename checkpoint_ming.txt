@@ -1,0 +1,182 @@
+1. Using cli,
+- cd <folder>
+- ls or l or ls -rtlh
+- pwd
+- mv <file1.txt> <folder/file2.txt>
+- cp <file1.txt> <folder/file2.txt>
+- touch <file.txt>
+- mkdir <folder>
+- rm <file.txt>
+- rmdir <folder> (only empty folder)
+- rm -rf folder (permenant delete)
+- cat file
+- echo "blabla" > <file.txt> (overwrite)
+- echo "blabla" >> <file.txt> (append)
+- vim <file.txt>
+2. Git
+- A branch is part of the github repository which makes version control possible?
+A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master. As you initially make commits, you're given a master branch that points to the last commit you made. Every time you commit, it moves forward automatically.
+
+- A remote is the repo you can push and pull from Github. git remote -v tells what remote you have set up. 
+A remote URL is Git's fancy way of saying "the place where your code is stored." That URL could be your repository on GitHub, or another user's fork, or even on a completely different server. You can only push to two types of URL addresses: ... An SSH URL, like git@github.com:user/repo.git.
+
+3. commands
+- git init
+- git clone <url>
+- git add file_name (git add .)
+- git commit -m "comments..."
+- git push ming master (or other remote branch)
+- git pull origin master
+- git branch
+- git remote -v
+- git remote add <remote_name> <url>
+
+4. A value could be assigned to a variable which could take other values too.
+5. int, float, str, complex, bytes, bool, dictionary, set, tuple, list
+6. an expression is evaluate to something, statement doesn't (return, for x in ...) does something. 
+7. relational ops describes relations between variables, e.g. x > =  f
+8. a == b checks if a is equal to b, but a = b assigns b to a
+9. if a == b:
+       print(a)
+   elif a > b:
+       print(b)
+   else:
+       print(a-b)
+10. A function takes an argument means, an argument is the input of the function
+11. In a function or a method, a return value is the output of the function or method when we call the function
+12. import classname as x, import classname, from module_name import class_name 
+13. If it's defined and used inside of a function, it is exclusive for the function and
+can't be used outside of it.
+14. void function doesn't have a return value; while fruitful ones do. always returns None in Python.
+15. it's a nicer and cleaner way to organize our code, so some functions can be re-used easily
+plus, it provides a logical structure to the code, easily readable. DRY: don't repeat yourself.
+16. no difference, just different way of importing the class math.
+for the first one, e.g. calling pi would be
+math.pi
+for the second one, we can just call pi as:
+pi
+for the third one, we use the simplified math:
+m.pi
+
+17. An index starts from zeo, used in iterables, str, list, tuple
+18. a few ways:
+s = "I love coding!!!"
+coding = s[7:13]
+coding = s[-9:-3]
+coding = s[-9:].rstrip("!")
+coding = s.split()[2][-6:]
+19. replace()
+s = 'coding is the best'
+s.replace("s", "z")
+20. a list is a collection of string, int, floats. list is mutable and string is not
+21. split() method takes in delimiter as a parameter, whitespace is the default.
+split(",")
+22. yes. but vice versa is wrong.  they could have the same value but saved in different memory spaces.
+a = 5
+b = 5
+a == b
+will return False
+23. an object has more than one reference is called: aliasing
+24. d = {}
+d[key] = value
+a key needs to be unique and immutable.
+25. for loop for a dictionary
+for k, v in loop_dict.items():
+    print(k, v)
+items() are tuples of key, value
+tuple unpacking
+for item in loop_dict.items():
+    print(item)
+26. OOP
+encapsulation: attributes, methods all wrapped in
+inheritance: take from superclass
+polymophism: many forms; overwriting methods in other classes. 
+
+allows to model the real world objects, data is packed up with the object
+resembles the way we look at the things.
+27. a class is a blueprint of your design
+28. class attributes are attributes used in the class, same for all the instances
+class Chair:
+    legs = 4 (class attribute)
+    def __init__(self, color)
+        self.color = color (class instances)
+29. embedded object means that one object part of the other object (rectangle and point)
+30. a method is defined within a class and can only be called by a instance of the class.
+while functions are stand alone and don't have the association with a class.
+
+mehtod gets called on an object: object.method()first argument is always self, which is implied.
+defined as part of the class
+31. __init__ is one of the dunder method and instanciating an object of the class, __init__ is being called.
+pass other parameters to the class. 
+parameter: color
+argument: red
+make/model would be a parameter and attribute
+
+attributes and methods are associated with class
+
+32. example for Car
+class Car:
+    def __init__(self, make, model, year):
+         self.make = make
+         self.model = model
+         self.year = year
+33. class SportsCar(Car):
+A subclass takes in the superclass name as an attribute when defining the subclass.
+34. a class attribute are used in and only inside the attribute and an instance attribute 
+35. write mode
+with open(file_name, "w") as f:
+    f.write("content here...")
+36. a try must have an except and vice versa
+else is optional which will only be executed if try works.
+37. because the first except is too general while the second is the right one that should be first.
+38. function
+def func(file_name):
+    with open(file_name, "r") as f:
+        content = f.read()
+    print(content.split(" "))
+39. try:
+        print(10/0)
+    except ZeroDivisionError:
+        print("You can't divide by zero!")
+40.def NewException(Exception):
+       pass
+a = 0
+b = 0
+if a == b:
+   raise NewException("Something is wrong.")
+
+   def division(a, b):
+        try:
+            c = a/b
+        except ZeroDivisionError:      
+            print("You can't divide by zero!")
+        else:
+            return c
+41. -try: check if the following statement works
+    -except: if the error occurs do the following
+    -raise: introduce an exception 
+    -else: if try works, do the following
+    -finally: the final step and always will be executed
+    -return: return the result for the function or method
+    -break: break the loop, jump out
+    -continue: continue the loop, so go to the beginning of the loop again.
+42. when you want to move on to the next step regardless of the result of the exception. throw an exception when you don't want to continue. but catch the exception when you want to continue
+43. 
+num = 999
+while 0<num<1000:
+    num -= num-2
+    print(num)
+
+for num in range(0, 1000, -1):
+    if num % 2!=0
+        print(num)
+
+45. 
+python3 -m venv .env
+source .env/bin/activate
+deactivate
+
+46. __name__ namesapce of the current module. is used for checking the value of this set variable. 
+so it won't be executed when importing the module. 
+
+47.

@@ -124,7 +124,8 @@ Why or why not? How can you prove it in code?
 
 - How does a class inherit from another class?
 
-- Explain the difference between a class attribute and an instance attribute.
+- Explain the difference between a class attribute and
+Instance attributes are owned by the specific instances of a class..
 
 - How do you open a file in write mode? Write some example code below.
 

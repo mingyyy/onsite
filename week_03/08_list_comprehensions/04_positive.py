@@ -5,3 +5,4 @@ the positive numbers from the list "numbers".
 '''
 
 numbers = [5, -8, 3, 10, -19, -22, 44, 2, -1, 4, 42]
+print([x for x in numbers if x > 0])

@@ -7,7 +7,7 @@ slightly different.
 Create and object of this class and demonstrate it's functionality.
 '''
 # some_file.py
-# import sys
+import sys
 # sys.path.insert(0, '/Users/Ming/Documents/CodingNomads/python-onsite/week_02/10_classes_objects_methods')
 
 
@@ -88,7 +88,7 @@ if __name__ == '__main__':
     # lucy.str()
     # lucy.eat()
 
-    Fred = Shepherd("Fred", "Black", "2", False, 50)
-    print(Fred.sleep())
-    print(Fred.eat())
-    print(Fred.color)
+    fred = Shepherd("Fred", "Black", "2", False, 50)
+    print(fred.sleep())
+    print(fred.eat())
+    print(fred.color)

@@ -7,7 +7,7 @@ from datetime import date as d
 
 
 # define an __init__() method that sets an attribute x
-class Codingnomads:
+class CodingnomadsStaff:
     '''
     :param max_size is the max number of students allowed in a class
     :param start_date is default as today
@@ -23,14 +23,14 @@ class Codingnomads:
         self.topic = topic
 
     def __str__(self):
-        return f"Codingnomads has {len(self.instructors)}! instructors. \nAnd there is a {self.topic} class starting {self.start_date} " \
+        return f"Codingnomads has {len(self.instructors)} instructors. \nAnd there is a {self.topic} class starting {self.start_date} " \
             f"which takes no more than {self.max_size} students."
 
 
-class Instructor(Codingnomads):
+class Instructor(CodingnomadsStaff):
 
     # define an __init__() method that sets an attribute y and calls the __init__() method of its parent
-    def __init__(self, topic, name, nationality, diet="vegan"):
+    def __init__(self, topic, name, nationality, diet="tempeh"):
         super().__init__( topic)
         self.name = name
         self.nationality = nationality
@@ -40,7 +40,7 @@ class Instructor(Codingnomads):
         return f"{self.name} is a {self.topic} instructor, working with Codingnomads and eating {self.diet} only."
 
 
-class Tasks(Instructor):
+class Java(Instructor):
 
     # define an __init__() method that sets an attribute z and calls the __init__() method of its parent
     def __init__(self,topic, name, nationality, *args): # lecture = True, homework = True, test=False
@@ -53,11 +53,11 @@ class Tasks(Instructor):
 
 
 # create an object of each class and print each of its attributes
-python = Codingnomads("Python")
+python = CodingnomadsStaff("Python")
 print(python)
 
 martin = Instructor("SQL", "Mr. Martin", "Austrian")
 print(martin)
 
-daily = Tasks("Java", "Roi", "Spain", "code review",'lecture',"exams")
+daily = Java("Java", "Roi", "Spain", "code review",'lecture',"exams")
 print(daily)

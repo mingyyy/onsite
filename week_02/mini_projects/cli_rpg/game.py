@@ -77,10 +77,12 @@ def play():
                 print(f"You, on the other hand, have power of {int(you.power)}. ")
             else:
                 # display the status of you and your enemy
-                print(f"Alien now has an IQ of {int(alien.iq)} and energy level of {int(alien.energy)}, "
+                print(f"Alien has an IQ of {int(alien.iq)} and energy level of {int(alien.energy)} "
+                      f"which means a power level of {alien.power}, "
                       f"while you have power of {int(you.power)}.")
             if int(alien.iq / 5) + int(alien.energy) > int(you.power) >= int(alien.energy):
-                print(f"You are kicking his ass! but the Alien is very smart with an IQ of {int(alien.iq)}.")
+                print(f"You are kicking his ass! but the Alien is very smart with an IQ of {int(alien.iq)} "
+                      f"and power of {alien.power} now.")
             elif int(you.power) < int(alien.energy):
                 print("Ohhhh, Noooooooooooooo\nYou are not his match right now! Sorry...You can try again though.")
                 continue

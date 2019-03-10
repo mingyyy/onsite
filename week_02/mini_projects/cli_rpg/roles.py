@@ -51,36 +51,35 @@ def sidekick_effect(alien, side):
         alien.iq /= 10
     else:
         alien.iq /= 3
-    return f"Alien now has an IQ of {int(alien.iq)} and energey level of {int(alien.energy)}. "
+    return f"Alien now has an IQ of {int(alien.iq)} and energey level of {int(alien.energy)}, " \
+        f"which means a power level of {int(alien.iq / 5) + int(alien.energy)}. "
 
 
 class Alien:
     '''Defines the role of Villains'''
-    IQ_level = []
-    power_level = []
-    energy_level = []
+    # IQ_level = []
+    # power_level = []
+    # energy_level = []
     # weakness_list = ["scorpio", "gelato", "tempeh", "water", "coding", "nothing"]
-    x = 10 # complexity level
 
-    def __init__(self, name, energy=100, iq=1000, weakness=0):
+    def __init__(self, name, energy=100, iq=1000, power= 300, weakness=0):
+        x = 10  # complexity level
+        # define the options for different combinations
+        i = rd.randint(1, x)
         self.name = name
         self.energy = energy
         self.iq = iq
         self.weakness = weakness
+        self.power = power
 
-        self.energy = rd.choice(self.energy_level)
-        self.iq = rd.choice(self.IQ_level)
+        self.energy = m.pi ** (m.sqrt(i))
+        self.iq = (i+1) * (x**2)
         self.weakness = rd.randint(1, 10)
-
-    # define the options for different combinations
-    i = rd.randint(1, x)
-    IQ_level.append((i+1) * (x**2))
-    energy_level.append(m.pi ** (m.sqrt(i)))
+        self. power = int(self.iq / 5) + int(self.energy)
 
     def __str__(self):
-
         return f'{self.name.capitalize()} is an alien with an IQ level of {int(self.iq)}, ' \
-            f'and energy level of {int(self.energy)}. Also very ugly!'
+            f'and energy level of {int(self.energy)} which means a power level of {self.power}. Also very ugly!'
 
 
 # sub classes: different aliens with different purposes
