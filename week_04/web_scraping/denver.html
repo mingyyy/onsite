@@ -1,0 +1,536 @@
+ <!DOCTYPE html> 
+<html lang='i_default'>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="The Freecycle Network is a grassroots and entirely nonprofit movement of people who are giving (and getting) stuff for free in their own towns. It's all about reuse and keeping good stuff out of landfills.">
+    <title>Posts on the Denver Group | The Freecycle Network</title>
+    <link rel="shortcut icon" href="//static.freecycle.org/images/favicon.ico" />
+    <link rel="icon" type="image/png" href="//static.freecycle.org/images/favicon.png" />
+    <link rel="apple-touch-icon" href="//static.freecycle.org/images/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="//static.freecycle.org/images/apple-ipad-icon.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="//static.freecycle.org/images/apple-touch-icon-retina.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="//static.freecycle.org/images/apple-ipad-icon-retina.png" />
+    <link rel='stylesheet' type='text/css' href='//static.freecycle.org/css/freecycle.css' />
+    <script type='text/javascript' src='//static.freecycle.org/js/freecycle.js'></script> <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12614335-1', 'auto');
+  ga('set', 'allowAdFeatures', false);
+ ga('set', 'userId', 28724186); // Set the user ID using signed-in user_id.
+ ga('send', 'pageview');
+
+</script>
+
+      <!-- Prebid Custom Config Section START -->
+  <!-- Make sure this is inserted before your GPT tag -->
+  <script> 
+    var PREBID_TIMEOUT = 1200;
+
+    // Add more bidders like Oath, etc later...
+    var adUnits =  [{
+		"code": "div-gpt-ad-8054601-1",
+		"bids": [
+		   {
+			"bidder": "openx",
+			"params": {
+                		"unit": "539508013",
+                		"delDomain":  "freecycle-d.openx.net"
+          		}
+		   },
+		   {
+			"bidder": "onedisplay",
+			"params": {
+                		"placement": "4741552",
+                		"network":  "11209.1"
+          		}
+		   },
+		   {
+			"bidder": "sovrn",
+			"params": {
+				"tagid": 533972
+			}
+		   }
+		],
+		"sizes": [
+			[300, 250]
+		]
+	}, {
+		"code": "div-gpt-ad-8054602-1",
+		"bids": [
+		   {
+			"bidder": "openx",
+			"params": {
+                		"unit": "539508016",
+                		"delDomain":  "freecycle-d.openx.net"
+          		}
+		   },
+		   {
+			"bidder": "onedisplay",
+			"params": {
+                		"placement": "4741554",
+                		"network":  "11209.1"
+          		}
+		   },
+		   {
+			"bidder": "sovrn",
+			"params": {
+				"tagid": 533973
+			}
+		   }
+		],
+		"sizes": [
+			[300, 250]
+		]
+	}, {
+		"code": "div-gpt-ad-8054603-1",
+		"bids": [
+		   {
+			"bidder": "openx",
+			"params": {
+                		"unit": "539508017",
+                		"delDomain":  "freecycle-d.openx.net"
+          		}
+		   },
+		   {
+			"bidder": "onedisplay",
+			"params": {
+                		"placement": "4741553",
+                		"network":  "11209.1"
+          		}
+		   },
+		   {
+			"bidder": "sovrn",
+			"params": {
+				"tagid": 533974
+			}
+		   }
+		],
+		"sizes": [
+			[160, 600]
+		]
+	}
+    ];
+
+    console.log("prebid configured.");
+    var pbjs = pbjs || {};
+    pbjs.que = pbjs.que || [];
+
+  </script>
+  <!-- Prebid Config Section END -->
+  
+  <!-- Prebid Boilerplate Section START. No Need to Edit. -->
+  <script type="text/javascript" src="//static.freecycle.org/js/prebid_tfn.js" async></script>
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    googletag.cmd.push(function() {
+        googletag.pubads().disableInitialLoad();
+    });
+
+    pbjs.que.push(function() {
+        pbjs.addAdUnits(adUnits);
+	pbjs.enableSendAllBids();
+	pbjs.enableAnalytics([
+	   {
+        	provider: 'ga',
+        	options: {
+            		enableDistribution: false
+        	}
+    	   }, 
+	   {
+        	provider: 'pubwise',
+        	options: {
+            		site: 'd86b34cf-c25f-4163-a19a-4184064fc1fe',
+            		endpoint:'https://api.pubwise.io/api/v4/event/add/'
+            	}
+           } 
+	]);
+        pbjs.requestBids({
+            bidsBackHandler: sendAdserverRequest
+        });
+    });
+
+    function sendAdserverRequest() {
+        if (pbjs.adserverRequestSent) return;
+        pbjs.adserverRequestSent = true;
+        googletag.cmd.push(function() {
+            pbjs.que.push(function() {
+                pbjs.setTargetingForGPTAsync();
+                googletag.pubads().refresh();
+            });
+        });
+    }
+
+    setTimeout(function() {
+        sendAdserverRequest();
+    }, PREBID_TIMEOUT);
+
+  </script>
+  <!-- Prebid Boilerplate Section END -->
+
+  <script>
+    (function () {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+                '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+  </script>
+
+  <script>
+//***************  define our actual TFN ad slots.
+googletag.cmd.push(function() {
+	googletag.defineSlot('/1053204/newBottomLeft', [
+		[300, 250]
+	], 'div-gpt-ad-8054601-1').addService(googletag.pubads());
+	googletag.defineSlot('/1053204/newBottomRight', [
+		[300, 250]
+	], 'div-gpt-ad-8054602-1').addService(googletag.pubads());
+	googletag.defineSlot('/1053204/newRightTower', [
+		[160, 600]
+	], 'div-gpt-ad-8054603-1').addService(googletag.pubads());
+
+	googletag.pubads().enableSingleRequest();
+	googletag.enableServices()
+});
+  </script>
+
+<!-- Sovrn OneTag code. outside of DFP and header bidding... -->
+<script src="//get.s-onetag.com/31b96d5d-a076-42df-a1ab-156f616f8bfe/tag.min.js" async defer></script>
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/i_default/sdk.js#xfbml=1&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+ </script>
+
+ 
+    <script>
+    googletag.cmd.push(function() {
+    	googletag.defineSlot('/1053204/groups_box_right_top', [[160, 80]], 'div-gpt-ad-1430927965333-1').addService(googletag.pubads());
+    });
+    </script> </head>
+
+<body>  <nav id="skip_nav_menu"><a href='#content'>Skip navigation menu</a><hr></nav>
+
+<nav id="main_menu"> <a href='https://www.freecycle.org'  class='menu_header ' title="Home">Home</a> <a href='https://www.freecycle.org/browse/'  class='menu_header ' title="Browse Groups">Browse Groups</a> <a href='http://faq.freecycle.org/' id='mmenu_faq'  class='menu_header ' title="FAQ">FAQ</a> <a href='https://www.freecycle.org/about/' id='mmenu_about'  class='menu_header ' title="About Freecycle&trade;">About Freecycle&trade;</a> <a href='https://www.freecycle.org/donate'  class='menu_header menu_header_2' title="Donate">Donate</a> <a href='http://store.freecycle.org/'  class='menu_header menu_header_2' title="Store">Store</a> <a href='https://www.freecycle.org/about/sponsors'  class='menu_header menu_header_2' title="Sponsors">Sponsors</a>  <a href='http://my.freecycle.org/logout' id='mmenu_logout'  class='menu_header ' title="Log out">Log out</a> <a href='http://my.freecycle.org/home/groups' id='mmenu_groups'  class='menu_header ' title="My Groups">My Groups</a> <a href='http://my.freecycle.org/home' id='mmenu_myf'  class='menu_header ' title="My Freecycle">My Freecycle</a>   </nav>
+<nav id='dyn_myf'>
+  <a href='http://my.freecycle.org/home/info' class='menu_item' title="My Info">My Info</a>
+  <a href='http://my.freecycle.org/home/groups' class='menu_item' title="My Groups">My Groups</a>
+  <a href='http://my.freecycle.org/home/posts' class='menu_item' title="My Posts">My Posts</a>
+</nav>
+<nav id='dyn_about'>
+  <a href="http://newswire.freecycle.org" class='menu_item' title="Newswire">Newswire</a>
+  <a href="//www.freecycle.org/about/background" class='menu_item' title="History">History</a>
+  <a href="//www.freecycle.org/about/video" class='menu_item' title="Instructional Video">Instructional Video</a>
+  <a href="//www.freecycle.org/about/promovideo" class='menu_item' title="Promo Video - Lamp">Promo Video - Lamp</a>
+  <a href="//www.freecycle.org/about/missionstatement" class='menu_item' title="Mission Statement">Mission Statement</a>
+  <a href="//www.freecycle.org/about/pressroom" class='menu_item' title="Press Room">Press Room</a>
+  <a href="//www.freecycle.org/about/sponsors" class='menu_item' title="Sponsors">Sponsors</a>
+  <a href="//www.freecycle.org/about/funds" class='menu_item' title="Sources and Use of Funds">Sources and Use of Funds</a>
+  <a href="//www.freecycle.org/about/volunteering" class='menu_item' title="Volunteering">Volunteering</a>
+  <a href="http://wiki.freecycle.org/Leadership" class='menu_item' title="Leadership">Leadership</a>
+  <a href="//www.freecycle.org/about/board" class='menu_item' title="Board">Board</a>
+  <a href="//www.freecycle.org/about/privacy" class='menu_item' title="Privacy">Privacy</a>
+  <a href="//www.freecycle.org/tos" class='menu_item' title="Terms of Service">Terms of Service</a>
+  <a href="//www.freecycle.org/about/disclaimer" class='menu_item' title="Disclaimer">Disclaimer</a>
+  <a href="//www.freecycle.org/about/links" class='menu_item' title="Links we like">Links we like</a>
+</nav>
+<nav id='dyn_faq'>
+ <a href="http://wiki.freecycle.org/MemberFAQ" class="menu_item" title="Member FAQ">Member FAQ</a>
+ <a href="http://wiki.freecycle.org/Moderator_Manual:Main_Page" class="menu_item" title="Moderator Manual">Moderator Manual</a>
+</nav>   <!-- only show this stuff if you're logged in -->  <style>
+#blocker_message {
+       
+        border: 2px solid black;
+        border-radius: 10px;
+        display: none;
+        align-self: center;
+        text-align: center;
+	font-size: .8em;
+        margin-top: 5px;
+        padding: 5px 80px 5px 80px;
+        background-color: #eee;
+}
+</style>
+<div id="blocker_message">Please consider turning off your ad-blocking software for this site, and/or making a <a href="//www.freecycle.org/donate">donation</a>. As a charitable nonprofit we rely on this income to keep this site running. <br>Big thank-you hug!</div>  <!-- fundraiser box goes here if we're doing it -->         <header id="main_logo" class="boxCenter">
+    <img src="//static.freecycle.org/images/freecycle_logo.jpg"
+        alt="logo of The Freecycle Network" title="The Freecycle Network" height="100" width="213" />
+    <p id='tagline'>changing the world<br />one gift at a time&trade;</p>
+</header>  <section id="content"> <h2>
+ <a href='https://groups.freecycle.org/group/DenverCO'>Denver</a>
+</h2> <div id="contentbox_tab_bar"><div id="corset"><div class="tabbar_tab orange_tab  tabbar_tab_on"><a href='https://groups.freecycle.org/group/DenverCO/posts/all' title='All Items'>All Items</a></div><div class="tabbar_tab orange_tab "><a href='https://groups.freecycle.org/group/DenverCO/posts/offer' title='Offers'>Offers</a></div><div class="tabbar_tab orange_tab "><a href='https://groups.freecycle.org/group/DenverCO/posts/wanted' title='Wanteds'>Wanteds</a></div><div class='tabbar_tab orange_tab menu_tab'><ul
+  ><li class='header'><a href="https://groups.freecycle.org/group/DenverCO" title="Group Info">Group Info &darr;</a></li
+  ><li class='item'><a href='https://groups.freecycle.org/group/DenverCO/description'>Description</a></li
+  ><li class='item'><a href='https://groups.freecycle.org/group/DenverCO/files'>Files</a></li
+  ><li class='item'><a href='https://groups.freecycle.org/group/DenverCO/links'>Links</a></li
+></ul></div><div class="tabbar_tab green_tab "><a href='http://my.freecycle.org/home/posts' title='My Posts'>My Posts</a></div><div class="tabbar_tab green_tab "><a href='http://my.freecycle.org/home/groups' title='My Groups'>My Groups</a></div><div class="tabbar_tab green_tab "><a href='http://my.freecycle.org/home/info' title='My Info'>My Info</a></div></div></div>    
+ <div id="group_box">
+
+  <div id="group_info_bar">
+  &nbsp;  3637 Members &nbsp;   <a href="https://groups.freecycle.org/group/DenverCO/contact_moderators">Contact Moderators</a>  </div>
+
+<div id="split_right" style="margin-left: 15px;"> <script>
+/** 
+$(document).ready(function() {
+    setTimeout( function() {
+        if($("div[id^=google_ads_iframe_] iframe:visible").length == 0)  { 
+                $('#blocker_message').slideDown(900);  
+        }}, 8000);  
+   // init();
+});
+**/
+</script>
+
+<!-- groups_box_right_top -->
+<div id='donate-box-container' style='margin-top:5px;margin-bottom:5px;margin-left:0px;width:160px; padding-bottom:5px;padding-top:5px;'>
+<div id='div-gpt-ad-1430927965333-1'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430927965333-1'); });
+    </script>
+</div>
+</div>
+
+<!-- /1053204/newRightTower -->
+<div id='div-gpt-ad-8054603-1' style='height:600px; width:160px;'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-8054603-1'); });
+    </script>
+</div>
+
+
+ </div>  <div id='group_admin_box'>  <p>
+  <a href='https://groups.freecycle.org/group/DenverCO/admin/91082' class='noDecoration'> <span class='post_icon icon_admin'><span>!</span> ADMIN</span> </a>
+  <a href='https://groups.freecycle.org/group/DenverCO/admin/91082'  >How to use Freecycle (and Guidelines and Disclaimer) June 2018</a>
+</p>  <p>
+  <a href='https://groups.freecycle.org/group/DenverCO/admin/91080' class='noDecoration'> <span class='post_icon icon_admin'><span>!</span> ADMIN</span> </a>
+  <a href='https://groups.freecycle.org/group/DenverCO/admin/91080'  >Looking for New Moderators  June 2018</a>
+</p>  </div>
+<hr />  <p> <a class='button defaultButton' href='http://my.freecycle.org/home/posts/DenverCO/post_to_group'>Make a new Post</a> <a class='button defaultButton' href='#group_posts_search_form' onclick='display_search_form(); return false;'>Search Posts</a>
+</p>  <hr />
+    <table id='group_posts_table'>  <tr class='candy2'>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70993506/Salmon%20oil%20for%20dogs%20and%20cats' class='noDecoration'
+> <span class='post_icon icon_offer'><span>&gt;</span> OFFER</span> </a>
+<br /> Wed Mar 13 22:25:14 2019<br />
+    (#70993506)
+  </td>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70993506/Salmon%20oil%20for%20dogs%20and%20cats'>Salmon oil for dogs and cats</a>  (S. Glencoe off Florida)  by link46<br />  Salmon oil supports skin and  coat health in dogs and cats.  Would have been a great idea if my dogs liked the taste.  Maybe ...<br /> <p class='textCenter'>
+  <a href='https://groups.freecycle.org/group/DenverCO/posts/70993506/Salmon%20oil%20for%20dogs%20and%20cats'>See details</a>
+</p>  </td>
+</tr>  <tr class='candy1'>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70993024/Black%20Dresser' class='noDecoration'
+> <span class='post_icon icon_offer'><span>&gt;</span> OFFER</span> </a>
+<br /> Wed Mar 13 20:03:18 2019<br />
+    (#70993024)
+  </td>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70993024/Black%20Dresser'>Black Dresser</a>  (Capitol Hill )  by kolivero<br />  Black Dresser. One of the drawers falls off the rails occasionally. <br /> <p class='textCenter'>
+  <a href='https://groups.freecycle.org/group/DenverCO/posts/70993024/Black%20Dresser'>See details</a>
+</p>  </td>
+</tr>  <tr class='candy2'>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70992796/Black%20Book%20Case' class='noDecoration'
+> <span class='post_icon icon_offer'><span>&gt;</span> OFFER</span> </a>
+<br /> Wed Mar 13 18:56:11 2019<br />
+    (#70992796)
+  </td>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70992796/Black%20Book%20Case'>Black Book Case</a>  (Capitol Hill )  by kolivero<br />  6.5 ft black book case. One shelf is a bit loose but could be fixed with a little support. You must be able to pick this item...<br /> <p class='textCenter'>
+  <a href='https://groups.freecycle.org/group/DenverCO/posts/70992796/Black%20Book%20Case'>See details</a>
+</p>  </td>
+</tr>  <tr class='candy1'>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70985104/Locks%20of%20any%20kind%20-%20working%20or%20not%20-%20for%20locksmith%20in%20training' class='noDecoration'
+> <span class='post_icon icon_wanted'><span>&bull;</span> WANTED</span> </a>
+<br /> Wed Mar 13 08:01:23 2019<br />
+    (#70985104)
+  </td>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70985104/Locks%20of%20any%20kind%20-%20working%20or%20not%20-%20for%20locksmith%20in%20training'>Locks of any kind - working or not - for locksmith in training</a>  (South Denver)  by DenverJim<br />  
+I am out of work, and training to become a locksmith.  I need old locks to practice picking and repairing. I need locks of ...<br /> <p class='textCenter'>
+  <a href='https://groups.freecycle.org/group/DenverCO/posts/70985104/Locks%20of%20any%20kind%20-%20working%20or%20not%20-%20for%20locksmith%20in%20training'>See details</a>
+</p>  </td>
+</tr>  <tr class='candy2'>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70979544/Window%20Inserts' class='noDecoration'
+> <span class='post_icon icon_offer'><span>&gt;</span> OFFER</span> </a>
+<br /> Tue Mar 12 19:06:45 2019<br />
+    (#70979544)
+  </td>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70979544/Window%20Inserts'>Window Inserts</a>  (S Wadsworth Blvd and W Yale Ave)  by pfmiller7101<br />  Window Inserts - Two 
+White vinyl, double pane, with grids.
+Size 33 1/8 wide x 28 1/8 high 
+Frame not included.<br /> <p class='textCenter'>
+  <a href='https://groups.freecycle.org/group/DenverCO/posts/70979544/Window%20Inserts'>See details</a>
+</p>  </td>
+</tr>  <tr class='candy1'>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70972700/Full%20Size%20Matress%20' class='noDecoration'
+> <span class='post_icon icon_offer'><span>&gt;</span> OFFER</span> </a>
+<br /> Tue Mar 12 08:44:35 2019<br />
+    (#70972700)
+  </td>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70972700/Full%20Size%20Matress%20'>Full Size Matress </a>  (6th and Pennsylvania )  by kolivero<br />  One full size mattress available. It’s in great shape, I’m just moving and won’t need it at my new home. <br /> <p class='textCenter'>
+  <a href='https://groups.freecycle.org/group/DenverCO/posts/70972700/Full%20Size%20Matress%20'>See details</a>
+</p>  </td>
+</tr>  <tr class='candy2'>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70965544/brown%20couch%2C%20dining%20room%20chairs%2C%20dresser%20with%20mirror' class='noDecoration'
+> <span class='post_icon icon_offer'><span>&gt;</span> OFFER</span> </a>
+<br /> Mon Mar 11 16:42:52 2019<br />
+    (#70965544)
+  </td>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70965544/brown%20couch%2C%20dining%20room%20chairs%2C%20dresser%20with%20mirror'>brown couch, dining room chairs, dresser with mirror</a>  (Littleton C470)  by JanetR606<br />  Dresser is in excellent condition, couch and chairs are in good condition.<br /> <p class='textCenter'>
+  <a href='https://groups.freecycle.org/group/DenverCO/posts/70965544/brown%20couch%2C%20dining%20room%20chairs%2C%20dresser%20with%20mirror'>See details</a>
+</p>  </td>
+</tr>  <tr class='candy1'>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70960246/Cisco%20Cert%20Guide%20CCNA%20ICND1%20and%202' class='noDecoration'
+> <span class='post_icon icon_offer'><span>&gt;</span> OFFER</span> </a>
+<br /> Mon Mar 11 10:27:37 2019<br />
+    (#70960246)
+  </td>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70960246/Cisco%20Cert%20Guide%20CCNA%20ICND1%20and%202'>Cisco Cert Guide CCNA ICND1 and 2</a>   by mfarnon<br />  Official Cert Guides: Cisco CCNA ICDN 1 and 2 volumes, Third edition, copyright 2012. (2 volumes total, hardback)<br /> <p class='textCenter'>
+  <a href='https://groups.freecycle.org/group/DenverCO/posts/70960246/Cisco%20Cert%20Guide%20CCNA%20ICND1%20and%202'>See details</a>
+</p>  </td>
+</tr>  <tr class='candy2'>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70950828/Pioneer%20cassette%20player%2Frecorder' class='noDecoration'
+> <span class='post_icon icon_offer'><span>&gt;</span> OFFER</span> </a>
+<br /> Sun Mar 10 17:32:34 2019<br />
+    (#70950828)
+  </td>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70950828/Pioneer%20cassette%20player%2Frecorder'>Pioneer cassette player/recorder</a>  (Evergreen, CO)  by pberteau<br />  Yes, that's right! A stereo cassette deck that works! Play your favorite cassettes! Copy them, make "mix tapes," etc.! I'd lo...<br /> <p class='textCenter'>
+  <a href='https://groups.freecycle.org/group/DenverCO/posts/70950828/Pioneer%20cassette%20player%2Frecorder'>See details</a>
+</p>  </td>
+</tr>  <tr class='candy1'>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70933834/Looking%20for%20a%20rental%20' class='noDecoration'
+> <span class='post_icon icon_wanted'><span>&bull;</span> WANTED</span> </a>
+<br /> Sat Mar  9 23:37:00 2019<br />
+    (#70933834)
+  </td>
+  <td>
+    <a href='https://groups.freecycle.org/group/DenverCO/posts/70933834/Looking%20for%20a%20rental%20'>Looking for a rental </a>  (Idaho springs CO)  by DaniellaBrown67<br />  Couple looking for a rental near Idaho springs. ASAP 
+<br /> <p class='textCenter'>
+  <a href='https://groups.freecycle.org/group/DenverCO/posts/70933834/Looking%20for%20a%20rental%20'>See details</a>
+</p>  </td>
+</tr>  </table>  <p> Showing 1 to 10 of 96 results.<br />1 <a href='?page=2&amp;resultsperpage=10&amp;showall=off&amp;include_offers=off&amp;include_wanteds=off&amp;include_receiveds=off&amp;include_takens=off'>2</a> <a href='?page=3&amp;resultsperpage=10&amp;showall=off&amp;include_offers=off&amp;include_wanteds=off&amp;include_receiveds=off&amp;include_takens=off'>3</a> <a href='?page=4&amp;resultsperpage=10&amp;showall=off&amp;include_offers=off&amp;include_wanteds=off&amp;include_receiveds=off&amp;include_takens=off'>4</a> <a href='?page=5&amp;resultsperpage=10&amp;showall=off&amp;include_offers=off&amp;include_wanteds=off&amp;include_receiveds=off&amp;include_takens=off'>5</a> <a href='?page=6&amp;resultsperpage=10&amp;showall=off&amp;include_offers=off&amp;include_wanteds=off&amp;include_receiveds=off&amp;include_takens=off'>6</a> <a href='?page=2&amp;resultsperpage=10&amp;showall=off&amp;include_offers=off&amp;include_wanteds=off&amp;include_receiveds=off&amp;include_takens=off'><span style='font-size:14pt'>&rarr;</span></a>   </p>  <hr />  <p> <a class='button defaultButton' href='http://my.freecycle.org/home/posts/DenverCO/post_to_group'>Make a new Post</a> <a class='button defaultButton' href='#group_posts_search_form' onclick='display_search_form(); return false;'>Search Posts</a>
+</p>  <div id='group_posts_search_form' title="Search Posts">  <form action='https://groups.freecycle.org/group/DenverCO/posts/search' method="post">
+
+<div class='clearBoth halfWidth'>
+	<label for='search_words'>Words to look for : </label>
+	<input type='text' name='search_words' id='search_words' value="" maxlength=20 size=30 />
+</div>
+
+<div class='halfWidth floatLeft textLeft'>
+  <input type='checkbox' name='include_offers' id='include_offers'  checked='checked' />
+  <label for='include_offers'>Include OFFER Posts? </label>
+	<br />
+
+  <input type='checkbox' name='include_wanteds' id='include_wanteds'  checked='checked' />
+  <label for='include_wanteds'>Include WANTED Posts? </label>
+</div>
+
+<div class='halfWidth floatRight textLeft'>
+	<label for='date_start'>Posted on or after </label>
+	<input class='datepicker' type='date' name='date_start' size="10" value="" />
+    <br />
+    
+	<label for='date_end'>Posted on or before </label>
+  <input class='datepicker' type='date' name='date_end' size="10" value="" />
+    <br />
+    
+	<label for='resultsperpage'>Results per page : </label>
+	<select name="resultsperpage" id='resultsperpage'>
+		<option value="10" selected="selected">10</option>
+		<option value="25" >25</option>
+	</select>
+</div>
+
+<div class='clearBoth textCenter'>
+  <input class='button defaultButton' type="submit" value="Search for Posts" />
+</div>
+
+</form>  </div>  <script type='text/javascript'>
+function display_search_form() {
+	$('#group_posts_search_form').
+		dialog({
+			width: 640,
+            modal: true,
+			resizable: false
+		});
+}
+
+// If the browser doesn't support a native HTML5 "date" input type, use a jQueryUI replacement
+var t = document.createElement("input");
+t.setAttribute("type", "date");
+if ( t.type !== "date" ) $('.datepicker').datepicker({ dateFormat: 'yy-mm-dd' });
+
+</script>  <div style='clear:both'></div>
+</div>
+
+
+<p id='joinbox'>  </p>  <section id='social_media_buttons'>
+    <div style='margin:0px important!;padding:0px;">
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'i_default' }
+</script>
+
+<div class="g-follow" data-annotation="bubble" data-height="20" data-href="https://plus.google.com/105329491294406874354" data-rel="publisher"></div>
+
+ <a style="top:-1px;" href="https://twitter.com/freecycle" class="twitter-follow-button" data-show-count="false">Follow @freecycle</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <div style='display:inline-block; top:-2px;' class="fb-like" data-href="https://www.facebook.com/freecycle" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+    </div>
+</section>
+  <div style="display:block;width:650px;margin-left:auto;margin-right:auto; margin-top:0em; top:-1em;">
+
+ <div style="margin:10px;margin-top:0px;background-color:white;float:left;">
+    <!-- /1053204/newBottomLeft -->
+    <div id='div-gpt-ad-8054601-1' style='height:250px; width:300px;'>
+        <script type='text/javascript'>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-8054601-1'); });
+        </script>
+    </div>
+
+ </div>
+ <div style="margin:10px;margin-top:0px;background-color:white;float:left;">
+    <!-- /1053204/newBottomRight -->
+   <div id='div-gpt-ad-8054602-1' style='height:250px; width:300px;'>
+        <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-8054602-1'); });
+        </script>
+    </div>
+ </div>
+</div>  <!-- end of whole bottom of page ad splacement -->
+
+    </section>
+
+<footer id="main_footer"> Copyright &copy;2019 The Freecycle Network (<a href="http://www.freecycle.org">http://www.freecycle.org</a>). All rights reserved. Freecycle and the Freecycle logo are trademarks of The Freecycle Network in various countries.  </footer>
+
+</body>
+</html>
+                     

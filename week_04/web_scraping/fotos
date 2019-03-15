@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js not-logged-in client-root">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>
+Hector Retamal on Instagram: “A boy flees from tear gas during clashes with Haitian police in Port-au-Prince, February 15, 2019, on the ninth day of protests against…”
+</title>
+
+        
+        <meta name="robots" content="noimageindex, noarchive">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#000000">
+        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+        <link rel="manifest" href="/data/manifest.json">
+
+        <link rel="preload" href="/static/bundles/metro/Vendor.js/a8e62fa5b3ba.js" as="script" type="text/javascript" crossorigin="anonymous" />
+<link rel="preload" href="/static/bundles/metro/en_US.js/b9cd2f43e19c.js" as="script" type="text/javascript" crossorigin="anonymous" />
+<link rel="preload" href="/static/bundles/metro/ConsumerCommons.js/8eda69c4d795.js" as="script" type="text/javascript" crossorigin="anonymous" />
+<link rel="preload" href="/static/bundles/metro/Consumer.js/49fd540cbe7c.js" as="script" type="text/javascript" crossorigin="anonymous" />
+<link rel="preload" href="/static/bundles/metro/PostPageContainer.js/4c83c9c4a039.js" as="script" type="text/javascript" crossorigin="anonymous" />
+        
+        
+
+        <script type="text/javascript">
+        (function() {
+  var docElement = document.documentElement;
+  var classRE = new RegExp('(^|\\s)no-js(\\s|$)');
+  var className = docElement.className;
+  docElement.className = className.replace(classRE, '$1js$2');
+})();
+</script>
+        <script type="text/javascript">
+(function() {
+  if ('PerformanceObserver' in window && 'PerformancePaintTiming' in window) {
+    window.__bufferedPerformance = [];
+    var ob = new PerformanceObserver(function(e) {
+      window.__bufferedPerformance.push.apply(window.__bufferedPerformance,e.getEntries());
+    });
+    ob.observe({entryTypes:['paint']});
+  }
+
+  window.__bufferedErrors = [];
+  window.onerror = function(message, url, line, column, error) {
+    window.__bufferedErrors.push({
+      message: message,
+      url: url,
+      line: line,
+      column: column,
+      error: error
+    });
+    return false;
+  };
+  window.__initialData = {
+    pending: true,
+    waiting: []
+  };
+  function asyncFetchSharedData(extra) {
+    var sharedDataReq = new XMLHttpRequest();
+    sharedDataReq.onreadystatechange = function() {
+          if (sharedDataReq.readyState === 4) {
+            if(sharedDataReq.status === 200){
+              var sharedData = JSON.parse(sharedDataReq.responseText);
+              window.__initialDataLoaded(sharedData, extra);
+            }
+          }
+        }
+    sharedDataReq.open('GET', '/data/shared_data/', true);
+    sharedDataReq.send(null);
+  }
+  window.__initialDataLoadFromCache = function(sharedData) {
+    var extra = { entry_data: sharedData.entry_data };
+    if (!localStorage) {
+      return asyncFetchSharedData(extra);
+    }
+    var cachedSharedData = localStorage.getItem("ig_sdc");
+    if (!cachedSharedData) {
+      return asyncFetchSharedData(extra);
+    }
+    try {
+      cachedSharedData = JSON.parse(cachedSharedData);
+    } catch (ex) {
+      return asyncFetchSharedData(extra);
+    }
+    if (cachedSharedData.expiry < Date.now() || cachedSharedData.schemaVersion != sharedData.cache_schema_version) {
+      return asyncFetchSharedData(extra);
+    }
+    window.__initialDataLoaded(sharedData, cachedSharedData.data);
+  };
+
+  function notifyLoaded(item, data) {
+    item.pending = false;
+    item.data = data;
+    for (var i = 0;i < item.waiting.length; ++i) {
+      item.waiting[i].resolve(item.data);
+    }
+    item.waiting = [];
+  }
+  function notifyError(item, msg) {
+    item.pending = false;
+    item.error = new Error(msg);
+    for (var i = 0;i < item.waiting.length; ++i) {
+      item.waiting[i].reject(item.error);
+    }
+    item.waiting = [];
+  }
+  window.__initialDataLoaded = function(initialData, extraData) {
+    for (var key in extraData) {
+      initialData[key] = extraData[key];
+    }
+    notifyLoaded(window.__initialData, initialData);
+  };
+  window.__initialDataError = function(msg) {
+    notifyError(window.__initialData, msg);
+  };
+  window.__additionalData = {};
+  window.__pendingAdditionalData = function(paths) {
+    for (var i = 0;i < paths.length; ++i) {
+      window.__additionalData[paths[i]] = {
+        pending: true,
+        waiting: []
+      };
+    }
+  };
+  window.__additionalDataLoaded = function(path, data) {
+    if (path in window.__additionalData) {
+      notifyLoaded(window.__additionalData[path], data);
+    } else {
+      console.error('Unexpected additional data loaded "' + path + '"');
+    }
+  };
+  window.__additionalDataError = function(path, msg) {
+    if (path in window.__additionalData) {
+      notifyError(window.__additionalData[path], msg);
+    } else {
+      console.error('Unexpected additional data encountered an error "' + path + '": ' + msg);
+    }
+  };
+  
+})();
+</script><script type="text/javascript">
+
+/*
+ Copyright 2018 Google Inc. All Rights Reserved.
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+*/
+
+(function(){function g(a,c){b||(b=a,f=c,h.forEach(function(a){removeEventListener(a,l,e)}),m())}function m(){b&&f&&0<d.length&&(d.forEach(function(a){a(b,f)}),d=[])}function n(a,c){function k(){g(a,c);d()}function b(){d()}function d(){removeEventListener("pointerup",k,e);removeEventListener("pointercancel",b,e)}addEventListener("pointerup",k,e);addEventListener("pointercancel",b,e)}function l(a){if(a.cancelable){var c=performance.now(),b=a.timeStamp;b>c&&(c=+new Date);c-=b;"pointerdown"==a.type?n(c,
+a):g(c,a)}}var e={passive:!0,capture:!0},h=["click","mousedown","keydown","touchstart","pointerdown"],b,f,d=[];h.forEach(function(a){addEventListener(a,l,e)});window.perfMetrics=window.perfMetrics||{};window.perfMetrics.onFirstInputDelay=function(a){d.push(a);m()}})();
+</script>
+    
+                <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/static/images/ico/apple-touch-icon-76x76-precomposed.png/4272e394f5ad.png">
+                <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/static/images/ico/apple-touch-icon-120x120-precomposed.png/02ba5abf9861.png">
+                <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/static/images/ico/apple-touch-icon-152x152-precomposed.png/419a6f9c7454.png">
+                <link rel="apple-touch-icon-precomposed" sizes="167x167" href="/static/images/ico/apple-touch-icon-167x167-precomposed.png/a24e58112f06.png">
+                <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/static/images/ico/apple-touch-icon-180x180-precomposed.png/85a358fb3b7d.png">
+                
+                    <link rel="icon" sizes="192x192" href="/static/images/ico/favicon-192.png/68d99ba29cc8.png">
+                
+            
+            
+                    <link rel="mask-icon" href="/static/images/ico/favicon.svg/fc72dd4bfde8.svg" color="#262626">
+                  
+                  <link rel="shortcut icon" type="image/x-icon" href="/static/images/ico/favicon.ico/36b3ee2d91ed.ico">
+                
+            
+            
+            
+    
+    <link rel="canonical" href="https://www.instagram.com/hectorretamalphotographer/p/Bt8wH2cji7q/" />
+    <meta content="62 Likes, 1 Comments - Hector Retamal (@hectorretamalphotographer) on Instagram: “A boy flees from tear gas during clashes with Haitian police in Port-au-Prince, February 15, 2019,…”" name="description" />
+    <meta property="og:site_name" content="Instagram" />
+    <meta property="og:title" content="Hector Retamal on Instagram: “A boy flees from tear gas during clashes with Haitian police in Port-au-Prince, February 15, 2019, on the ninth day of protests against…”" />
+    <meta property="og:image" content="https://instagram.fcgk6-1.fna.fbcdn.net/vp/47b5234bb9f4330c6249cbe45cecf9e9/5D05DBEC/t51.2885-15/e35/51346029_2234231520149381_5091595914720554950_n.jpg?_nc_ht=instagram.fcgk6-1.fna.fbcdn.net" />
+    <meta property="og:description" content="62 Likes, 1 Comments - Hector Retamal (@hectorretamalphotographer) on Instagram: “A boy flees from tear gas during clashes with Haitian police in Port-au-Prince, February 15, 2019,…”" />
+    <meta property="fb:app_id" content="124024574287414" />
+    <meta property="og:url" content="https://www.instagram.com/p/Bt8wH2cji7q/" />
+    <meta property="instapp:owner_user_id" content="329488425" />
+    <meta property="al:ios:app_name" content="Instagram" />
+    <meta property="al:ios:app_store_id" content="389801252" />
+    <meta property="al:ios:url" content="instagram://media?id=1980669581866184426" />
+    <meta property="al:android:app_name" content="Instagram" />
+    <meta property="al:android:package" content="com.instagram.android" />
+    <meta property="al:android:url" content="https://www.instagram.com/p/Bt8wH2cji7q/" />
+    
+    <meta name="medium" content="image" />
+    <meta property="og:type" content="instapp:photo" />
+    <meta property="instapp:hashtags" content="protest" /><meta property="instapp:hashtags" content="documentaryphotography" /><meta property="instapp:hashtags" content="photography" /><meta property="instapp:hashtags" content="streetphoto" /><meta property="instapp:hashtags" content="unitedstates" /><meta property="instapp:hashtags" content="politicalsituation" /><meta property="instapp:hashtags" content="people" /><meta property="instapp:hashtags" content="haiti" /><meta property="instapp:hashtags" content="usflag" /><meta property="instapp:hashtags" content="ayiti" /><meta property="instapp:hashtags" content="puertoprincipe" /><meta property="instapp:hashtags" content="photojournalism" /><meta property="instapp:hashtags" content="protesta" /><meta property="instapp:hashtags" content="nikon" /><meta property="instapp:hashtags" content="fotografia" /><meta property="instapp:hashtags" content="fotoperiodismo" /><meta property="instapp:hashtags" content="barricades" /><meta property="instapp:hashtags" content="demonstrators" /><meta property="instapp:hashtags" content="streetphotography" /><meta property="instapp:hashtags" content="burningtires" /><meta property="instapp:hashtags" content="petrokaribe" /><meta property="instapp:hashtags" content="usa" /><meta property="instapp:hashtags" content="us" /><meta property="instapp:hashtags" content="nikond4s" /><meta property="instapp:hashtags" content="portauprince" /><meta property="instapp:hashtags" content="colors" /><meta property="instapp:hashtags" content="🇭🇹" /><meta property="instapp:hashtags" content="men" /><meta property="instapp:hashtags" content="petwokaribe" /><meta property="instapp:hashtags" content="petrocaribe" />
+
+    <link rel="alternate" href="android-app://com.instagram.android/https/instagram.com/p/Bt8wH2cji7q/" />
+    
+            <script type="application/ld+json">
+                {"@context":"http:\/\/schema.org","@type":"ImageObject","caption":"A boy flees from tear gas during clashes with Haitian police in Port-au-Prince, February 15, 2019, on the ninth day of protests against Haitian President Jovenel Moise and the misuse of the Petrocaribe fund.\u00a0\nHECTOR RETAMAL \/ AFP\n\ncopyright \u00a9 Hector RETAMAL\/AFP PHOTO\n\n#\ud83c\udded\ud83c\uddf9 #Haiti #ayiti #us #unitedstates #usa #usflag  #portauprince #puertoprincipe #photojournalism #photography #streetphotography #streetphoto #fotoperiodismo #documentaryphotography #fotografia #protest #protesta #nikond4s #nikon #petrocaribe #petrokaribe #petwokaribe #men #people #demonstrators #politicalsituation #colors #burningtires #barricades","representativeOfPage":"http:\/\/schema.org\/True","uploadDate":"2019-02-16T16:23:55","author":{"@type":"Person","alternateName":"@hectorretamalphotographer","mainEntityofPage":{"@type":"ProfilePage","@id":"https:\/\/www.instagram.com\/hectorretamalphotographer\/"}},"comment":[{"@type":"Comment","text":"Your ability to capture things so vividly brings me chills.","author":{"@type":"Person","alternateName":"@sunray_suzie","mainEntityofPage":{"@type":"ProfilePage","@id":"https:\/\/www.instagram.com\/sunray_suzie\/"}}}],"commentCount":"1","contentLocation":{"@type":"Place","name":"Port-au-Prince, Haiti","mainEntityofPage":{"@type":"CollectionPage","@id":"https:\/\/www.instagram.com\/explore\/locations\/219575197\/port-au-prince-haiti\/"},"address":{"@type":"PostalAddress","addressLocality":"Port-au-Prince, Haiti","addressCountry":{"@type":"Country","name":"HT"}}},"interactionStatistic":{"@type":"InteractionCounter","interactionType":{"@type":"LikeAction"},"userInteractionCount":"62"},"mainEntityofPage":{"@type":"ItemPage","@id":"https:\/\/www.instagram.com\/p\/Bt8wH2cji7q\/"},"description":"62 Likes, 1 Comments - Hector Retamal (@hectorretamalphotographer) on Instagram: \u201cA boy flees from tear gas during clashes with Haitian police in Port-au-Prince, February 15, 2019,\u2026\u201d","name":"Hector Retamal on Instagram: \u201cA boy flees from tear gas during clashes with Haitian police in Port-au-Prince, February 15, 2019, on the ninth day of protests against\u2026\u201d"}
+            </script>
+        
+    <link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/" hreflang="x-default" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=en" hreflang="en" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=fr" hreflang="fr" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=it" hreflang="it" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=de" hreflang="de" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es" hreflang="es" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=zh-cn" hreflang="zh-cn" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=zh-tw" hreflang="zh-tw" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=ja" hreflang="ja" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=ko" hreflang="ko" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=pt" hreflang="pt" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=pt-br" hreflang="pt-br" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=af" hreflang="af" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=cs" hreflang="cs" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=da" hreflang="da" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=el" hreflang="el" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=fi" hreflang="fi" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=hr" hreflang="hr" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=hu" hreflang="hu" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=id" hreflang="id" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=ms" hreflang="ms" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=nb" hreflang="nb" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=nl" hreflang="nl" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=pl" hreflang="pl" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=ru" hreflang="ru" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=sk" hreflang="sk" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=sv" hreflang="sv" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=th" hreflang="th" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=tl" hreflang="tl" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=tr" hreflang="tr" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=hi" hreflang="hi" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=bn" hreflang="bn" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=gu" hreflang="gu" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=kn" hreflang="kn" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=ml" hreflang="ml" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=mr" hreflang="mr" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=pa" hreflang="pa" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=ta" hreflang="ta" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=te" hreflang="te" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=ne" hreflang="ne" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=si" hreflang="si" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=ur" hreflang="ur" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=vi" hreflang="vi" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=bg" hreflang="bg" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=fr-ca" hreflang="fr-ca" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=ro" hreflang="ro" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=sr" hreflang="sr" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=uk" hreflang="uk" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=zh-hk" hreflang="zh-hk" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-hn" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-mx" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-pa" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-cr" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-cu" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-py" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-sv" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-ar" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-bo" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-do" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-uy" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-ni" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-co" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-ec" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-cl" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-gt" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-ve" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-pr" />
+<link rel="alternate" href="https://www.instagram.com/p/Bt8wH2cji7q/?hl=es-la" hreflang="es-pe" />
+</head>
+    <body class="">
+        
+    <span id="react-root"><svg width="50" height="50" viewBox="0 0 50 50" style="position:absolute;top:50%;left:50%;margin:-25px 0 0 -25px;fill:#c7c7c7"><path d="M25 1c-6.52 0-7.34.03-9.9.14-2.55.12-4.3.53-5.82 1.12a11.76 11.76 0 0 0-4.25 2.77 11.76 11.76 0 0 0-2.77 4.25c-.6 1.52-1 3.27-1.12 5.82C1.03 17.66 1 18.48 1 25c0 6.5.03 7.33.14 9.88.12 2.56.53 4.3 1.12 5.83a11.76 11.76 0 0 0 2.77 4.25 11.76 11.76 0 0 0 4.25 2.77c1.52.59 3.27 1 5.82 1.11 2.56.12 3.38.14 9.9.14 6.5 0 7.33-.02 9.88-.14 2.56-.12 4.3-.52 5.83-1.11a11.76 11.76 0 0 0 4.25-2.77 11.76 11.76 0 0 0 2.77-4.25c.59-1.53 1-3.27 1.11-5.83.12-2.55.14-3.37.14-9.89 0-6.51-.02-7.33-.14-9.89-.12-2.55-.52-4.3-1.11-5.82a11.76 11.76 0 0 0-2.77-4.25 11.76 11.76 0 0 0-4.25-2.77c-1.53-.6-3.27-1-5.83-1.12A170.2 170.2 0 0 0 25 1zm0 4.32c6.4 0 7.16.03 9.69.14 2.34.11 3.6.5 4.45.83 1.12.43 1.92.95 2.76 1.8a7.43 7.43 0 0 1 1.8 2.75c.32.85.72 2.12.82 4.46.12 2.53.14 3.29.14 9.7 0 6.4-.02 7.16-.14 9.69-.1 2.34-.5 3.6-.82 4.45a7.43 7.43 0 0 1-1.8 2.76 7.43 7.43 0 0 1-2.76 1.8c-.84.32-2.11.72-4.45.82-2.53.12-3.3.14-9.7.14-6.4 0-7.16-.02-9.7-.14-2.33-.1-3.6-.5-4.45-.82a7.43 7.43 0 0 1-2.76-1.8 7.43 7.43 0 0 1-1.8-2.76c-.32-.84-.71-2.11-.82-4.45a166.5 166.5 0 0 1-.14-9.7c0-6.4.03-7.16.14-9.7.11-2.33.5-3.6.83-4.45a7.43 7.43 0 0 1 1.8-2.76 7.43 7.43 0 0 1 2.75-1.8c.85-.32 2.12-.71 4.46-.82 2.53-.11 3.29-.14 9.7-.14zm0 7.35a12.32 12.32 0 1 0 0 24.64 12.32 12.32 0 0 0 0-24.64zM25 33a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm15.68-20.8a2.88 2.88 0 1 0-5.76 0 2.88 2.88 0 0 0 5.76 0z"/></svg></span>
+
+        
+
+
+        
+            <script type="text/javascript">window._sharedData = {"config":{"csrf_token":"wdcqtkVnprYBv3LzrxJAL5PTH7lDEQ9C","viewer":null,"viewerId":null},"supports_es6":false,"country_code":"ID","language_code":"en","locale":"en_US","entry_data":{"PostPage":[{"graphql":{"shortcode_media":{"__typename":"GraphImage","id":"1980669581866184426","shortcode":"Bt8wH2cji7q","dimensions":{"height":719,"width":1080},"gating_info":null,"media_preview":"ACobuLqDhQCA579R9Kje7l3kgAPtwMc9GJ78d8ZquImYYBbBHPP+f0pGjyepz7GgCc310o5254xx+nYc/wD6qlF7c91T9R/nHvWRcKyqCchcjqST9fb6frU6wjAJLZPuaQF03s+G+UZIG32PT/6/P0py3kuBlVzjnlutUTGP7zcUmz/bP50xFlZ41AAyapI5Yk+5qvCoaQKehP8ASrKqB0oGTP8AOhU/h9R0pyu7KCAOn+ehpoAPFOX5RgcAUhhl/Qf5/GmfP6D/AD+NTHp9ahyaAP/Z","display_url":"https://instagram.fcgk6-1.fna.fbcdn.net/vp/47b5234bb9f4330c6249cbe45cecf9e9/5D05DBEC/t51.2885-15/e35/51346029_2234231520149381_5091595914720554950_n.jpg?_nc_ht=instagram.fcgk6-1.fna.fbcdn.net","display_resources":[{"src":"https://instagram.fcgk6-1.fna.fbcdn.net/vp/bf1baec5216107840d1a55b0c20e44e7/5D1D6756/t51.2885-15/sh0.08/e35/s640x640/51346029_2234231520149381_5091595914720554950_n.jpg?_nc_ht=instagram.fcgk6-1.fna.fbcdn.net","config_width":640,"config_height":426},{"src":"https://instagram.fcgk6-1.fna.fbcdn.net/vp/e56a75e25136c6316bdbf1d17eb32452/5D180492/t51.2885-15/sh0.08/e35/s750x750/51346029_2234231520149381_5091595914720554950_n.jpg?_nc_ht=instagram.fcgk6-1.fna.fbcdn.net","config_width":750,"config_height":499},{"src":"https://instagram.fcgk6-1.fna.fbcdn.net/vp/47b5234bb9f4330c6249cbe45cecf9e9/5D05DBEC/t51.2885-15/e35/51346029_2234231520149381_5091595914720554950_n.jpg?_nc_ht=instagram.fcgk6-1.fna.fbcdn.net","config_width":1080,"config_height":719}],"accessibility_caption":"Image may contain: 1 person, standing and outdoor","is_video":false,"should_log_client_event":false,"tracking_token":"eyJ2ZXJzaW9uIjo1LCJwYXlsb2FkIjp7ImlzX2FuYWx5dGljc190cmFja2VkIjp0cnVlLCJ1dWlkIjoiNGQ0OGVmNzIxYzg2NGQ5NjkyODRlOWJmZWIxZDI4OGYxOTgwNjY5NTgxODY2MTg0NDI2In0sInNpZ25hdHVyZSI6IiJ9","edge_media_to_tagged_user":{"edges":[]},"edge_media_to_caption":{"edges":[{"node":{"text":"A boy flees from tear gas during clashes with Haitian police in Port-au-Prince, February 15, 2019, on the ninth day of protests against Haitian President Jovenel Moise and the misuse of the Petrocaribe fund.\u00a0\nHECTOR RETAMAL / AFP\n\ncopyright \u00a9 Hector RETAMAL/AFP PHOTO\n\n#\ud83c\udded\ud83c\uddf9 #Haiti #ayiti #us #unitedstates #usa #usflag  #portauprince #puertoprincipe #photojournalism #photography #streetphotography #streetphoto #fotoperiodismo #documentaryphotography #fotografia #protest #protesta #nikond4s #nikon #petrocaribe #petrokaribe #petwokaribe #men #people #demonstrators #politicalsituation #colors #burningtires #barricades"}}]},"caption_is_edited":true,"has_ranked_comments":false,"edge_media_to_comment":{"count":1,"page_info":{"has_next_page":false,"end_cursor":null},"edges":[{"node":{"id":"17873380723309462","text":"Your ability to capture things so vividly brings me chills.","created_at":1550928602,"did_report_as_spam":false,"owner":{"id":"1438317046","is_verified":false,"profile_pic_url":"https://instagram.fcgk6-1.fna.fbcdn.net/vp/15ca9cb76b32f64b8845882b314a75f6/5D1EAC3B/t51.2885-19/s150x150/51262040_309229373063094_3277745338944847872_n.jpg?_nc_ht=instagram.fcgk6-1.fna.fbcdn.net","username":"sunray_suzie"},"viewer_has_liked":false,"edge_liked_by":{"count":1}}}]},"comments_disabled":false,"taken_at_timestamp":1550334235,"edge_media_preview_like":{"count":62,"edges":[]},"edge_media_to_sponsor_user":{"edges":[]},"location":{"id":"219575197","has_public_page":true,"name":"Port-au-Prince, Haiti","slug":"port-au-prince-haiti","address_json":"{\"street_address\": \"\", \"zip_code\": \"\", \"city_name\": \"Port-au-Prince, Haiti\", \"region_name\": \"\", \"country_code\": \"HT\", \"exact_city_match\": true, \"exact_region_match\": false, \"exact_country_match\": false}"},"viewer_has_liked":false,"viewer_has_saved":false,"viewer_has_saved_to_collection":false,"viewer_in_photo_of_you":false,"viewer_can_reshare":true,"owner":{"id":"329488425","is_verified":false,"profile_pic_url":"https://instagram.fcgk6-1.fna.fbcdn.net/vp/9f450de9c32a21860cf3c573f51b34b8/5D11755D/t51.2885-19/s150x150/37978950_2097671273827284_7423471858667749376_n.jpg?_nc_ht=instagram.fcgk6-1.fna.fbcdn.net","username":"hectorretamalphotographer","blocked_by_viewer":false,"followed_by_viewer":false,"full_name":"Hector Retamal","has_blocked_viewer":false,"is_private":false,"is_unpublished":false,"requested_by_viewer":false},"is_ad":false,"edge_web_media_to_related_media":{"edges":[]}}}}]},"gatekeepers":{"sw":true,"seo":true,"seoht":true,"phone_qp":true,"nt":true,"rp":true,"oba":true,"2":true},"knobs":{"acct:ntb":0,"cb":0,"captcha":0,"fr":0},"qe":{"sdc":{"g":"","p":{}},"iab":{"g":"control","p":{"has_open_app_ios":"false"}},"app_upsell":{"g":"test_iglite","p":{"has_iglite_link":"true","has_iglite_new_content":"false"}},"igl_app_upsell":{"g":"","p":{}},"profile_header_name":{"g":"","p":{}},"bc3l":{"g":"","p":{}},"direct_conversation_reporting":{"g":"","p":{}},"frx_reporting":{"g":"","p":{}},"general_reporting":{"g":"","p":{}},"reporting":{"g":"","p":{}},"acc_recovery_link":{"g":"","p":{}},"notif":{"g":"","p":{}},"mobile_stories_doodling":{"g":"","p":{}},"show_copy_link":{"g":"","p":{}},"p_edit":{"g":"","p":{}},"404_as_react":{"g":"","p":{}},"acc_recovery":{"g":"","p":{}},"bundle":{"g":"","p":{}},"collections":{"g":"","p":{}},"dir":{"g":"","p":{}},"comment_ta":{"g":"","p":{}},"su":{"g":"","p":{}},"ebd_ul":{"g":"","p":{}},"ebdsim_li":{"g":"","p":{}},"ebdsim_lo":{"g":"","p":{}},"empty_feed":{"g":"","p":{}},"appsell":{"g":"","p":{}},"heart_tab":{"g":"","p":{}},"follow_button":{"g":"","p":{}},"log_cont":{"g":"control_intent_d","p":{"has_contextual_d":"false"}},"msisdn":{"g":"","p":{}},"onetaplogin":{"g":"control","p":{"during_reg":"false","default_value":"false","storage_version":"one_tap_storage_version"}},"onetap":{"g":"","p":{}},"profile_tabs":{"g":"control","p":{"is_enabled":"false"}},"multireg_iter":{"g":"control_11_29","p":{"has_prioritized_phone":"false"}},"reg_vp":{"g":"test_group_2","p":{"hide_value_prop":"true"}},"report_media":{"g":"","p":{}},"report_profile":{"g":"","p":{}},"su_universe":{"g":"","p":{}},"stale":{"g":"","p":{}},"tp_pblshr":{"g":"","p":{}},"video":{"g":"","p":{}},"felix":{"g":"","p":{}},"felix_clear_fb_cookie":{"g":"","p":{}},"felix_creation_duration_limits":{"g":"","p":{}},"felix_creation_enabled":{"g":"","p":{}},"felix_creation_fb_crossposting":{"g":"","p":{}},"felix_creation_fb_crossposting_v2":{"g":"","p":{}},"felix_creation_validation":{"g":"","p":{}},"felix_creation_video_upload":{"g":"","p":{}},"felix_early_onboarding":{"g":"","p":{}},"profile_enhance_li":{"g":"","p":{}},"profile_enhance_lo":{"g":"","p":{}},"comment_enhance":{"g":"","p":{}},"mweb_topical_explore":{"g":"","p":{}},"follow_all_fb":{"g":"","p":{}},"lite_direct_upsell":{"g":"","p":{}},"web_loggedout_noop":{"g":"","p":{}},"a2hs_heuristic_uc":{"g":"","p":{}},"a2hs_heuristic_non_uc":{"g":"","p":{}},"web_hashtag":{"g":"","p":{}},"web_hashtag_logged_out":{"g":"","p":{}},"header_scroll":{"g":"","p":{}},"web_lo_follow":{"g":"","p":{}},"web_share":{"g":"","p":{}},"lite_rating":{"g":"","p":{}},"web_embeds_share":{"g":"","p":{}},"web_share_lo":{"g":"","p":{}},"web_embeds_logged_out":{"g":"test_comment_input","p":{"show_comment_input":"true"}},"web_datasaver_mode":{"g":"","p":{}},"lite_datasaver_mode":{"g":"","p":{}},"post_options":{"g":"","p":{}},"igtv_creation_feed_preview":{"g":"","p":{}},"igtv_public_viewing":{"g":"","p":{}},"caching":{"g":"","p":{}},"nux":{"g":"","p":{}},"iglmsr":{"g":"multi_step_reg","p":{"has_multi_step_registration":"true","has_prefill":"false"}},"igwsvl":{"g":"","p":{}},"iglcp":{"g":"has_prefill","p":{"has_login_prefill":"true"}},"lite_story_video_upload":{"g":"","p":{}},"iglscioi":{"g":"","p":{}},"ws2":{"g":"","p":{}},"wpn":{"g":"","p":{}},"hc":{"g":"","p":{}},"lite_user_tag_creation":{"g":"","p":{}},"iglcius":{"g":"","p":{}},"wfvu":{"g":"","p":{}},"iglsa":{"g":"","p":{}},"igwllre":{"g":"","p":{}},"wss2":{"g":"","p":{}},"igwlspe":{"g":"","p":{}},"sticker_tray":{"g":"","p":{}},"web_sentry":{"g":"","p":{}},"igwspe":{"g":"","p":{}}},"hostname":"www.instagram.com","deployment_stage":"c1","platform":"web","rhx_gis":"7172ca20f68e171317578b0dea482e60","nonce":"L/H8Z+21K/8LEeZo+51wCg==","mid_pct":16.46042,"server_checks":{},"zero_data":{},"probably_has_app":false,"cache_schema_version":1,"to_cache":{},"rollout_hash":"270e6e13c97a","bundle_variant":"metro","is_canary":false};</script>
+<script type="text/javascript">window.__initialDataLoaded(window._sharedData);</script>
+<script type="text/javascript">var __DEV__=false,__BUNDLE_START_TIME__=this.nativePerformanceNow?nativePerformanceNow():Date.now(),process=this.process||{};process.env=process.env||{};process.env.NODE_ENV="production";!(function(r){"use strict";function e(){return f="number"==typeof __NUM_MODULES__?Array(0|__NUM_MODULES__):Object.create(null)}function t(r){var e=r,t=f[e];return t&&t.isInitialized?t.publicModule.exports:o(e,t)}function n(r){var e=r;if(f[e]&&f[e].importedDefault!==c)return f[e].importedDefault;var n=t(e),i=n&&n.__esModule?n.default:n;return f[e].importedDefault=i}function i(r){var e=r;if(f[e]&&f[e].importedAll!==c)return f[e].importedAll;var n,i=t(e);if(i&&i.__esModule)n=i;else{if(n={},i)for(var o in i)p.call(i,o)&&(n[o]=i[o]);n.default=i}return f[e].importedAll=n}function o(e,t){if(!s&&r.ErrorUtils){s=!0;var n;try{n=l(e,t)}catch(e){r.ErrorUtils.reportFatalError(e)}return s=!1,n}return l(e,t)}function u(r){return{segmentId:r>>>_,localId:r&v}}function l(e,o){!o&&r.__defineModule&&(r.__defineModule(e),o=f[e]);var l=r.nativeRequire;if(!o&&l){var c=u(e),p=c.segmentId;l(c.localId,p),o=f[e]}if(!o)throw a(e);if(o.hasError)throw d(e,o.error);o.isInitialized=!0;var s=o,_=s.factory,v=s.dependencyMap;try{var M=o.publicModule;if(M.id=e,h.length>0)for(var m=0;m<h.length;++m)h[m].cb(e,M);return _(r,t,n,i,M,M.exports,v),o.factory=void 0,o.dependencyMap=void 0,M.exports}catch(r){throw o.hasError=!0,o.error=r,o.isInitialized=!1,o.publicModule.exports=void 0,r}}function a(r){var e='Requiring unknown module "'+r+'".';return Error(e)}function d(r,e){var t=r;return Error('Requiring module "'+t+'", which threw an exception: '+e)}r.__r=t,r.__d=function(r,e,t){null==f[e]&&(f[e]={dependencyMap:t,factory:r,hasError:!1,importedAll:c,importedDefault:c,isInitialized:!1,publicModule:{exports:{}}})},r.__c=e;var f=e(),c={},p={}.hasOwnProperty;t.importDefault=n,t.importAll=i;var s=!1,_=16,v=65535;t.unpackModuleId=u,t.packModuleId=function(r){return(r.segmentId<<_)+r.localId};var h=[];t.registerHook=function(r){var e={cb:r};return h.push(e),{release:function(){for(var r=0;r<h.length;++r)if(h[r]===e){h.splice(r,1);break}}}}})('undefined'!=typeof global?global:'undefined'!=typeof window?window:this);
+__s={"15":"/static/bundles/metro/NotificationLandingPage.js/8790c118edd7.js","16":"/static/bundles/metro/Challenge.js/0457a7b12967.js","17":"/static/bundles/metro/Consumer.js/49fd540cbe7c.js","19":"/static/bundles/metro/DebugInfoNub.js/7c745548e21c.js","20":"/static/bundles/metro/NametagLandingPage.js/42688a7d21f8.js","21":"/static/bundles/metro/OneTapUpsell.js/e11d31dd89c4.js","22":"/static/bundles/metro/MobileDirectPage.js/ff105fa870e7.js","23":"/static/bundles/metro/OAuthPermissionsPage.js/832482e3be64.js","24":"/static/bundles/metro/IGTVVideoUploadPageContainer.js/74978e231488.js","25":"/static/bundles/metro/IGTVVideoDraftsPageContainer.js/b24f8be633fe.js","26":"/static/bundles/metro/HttpErrorPage.js/caecfbadf1c1.js","27":"/static/bundles/metro/ProfilePageContainer.js/de6968040747.js","28":"/static/bundles/metro/PhoneConfirmPage.js/05f9f1e361cf.js","29":"/static/bundles/metro/TagPageContainer.js/e6cce2b4a0cc.js","30":"/static/bundles/metro/DesktopStoriesPage.js/6a84507e31d8.js","31":"/static/bundles/metro/MobileStoriesPage.js/202ce0b6c70f.js","32":"/static/bundles/metro/DesktopStoriesLoginPage.js/1253e0135a83.js","33":"/static/bundles/metro/MobileStoriesLoginPage.js/d8e1d59747c4.js","34":"/static/bundles/metro/SuggestedDirectoryLandingPage.js/ebb8fd09f253.js","35":"/static/bundles/metro/HashtagsDirectoryLandingPage.js/0c7f673160c6.js","36":"/static/bundles/metro/ProfilesDirectoryLandingPage.js/015e9bd3a075.js","37":"/static/bundles/metro/PostPageContainer.js/4c83c9c4a039.js","38":"/static/bundles/metro/MediaChainingPageContainer.js/5492b216af8c.js","39":"/static/bundles/metro/MobileAllCommentsPage.js/3e2e7c93be14.js","40":"/static/bundles/metro/ResetPasswordPageContainer.js/afc4cba9c2d2.js","41":"/static/bundles/metro/LoginAndSignupPage.js/d8895d8d0ebf.js","42":"/static/bundles/metro/LocationsDirectoryLandingPage.js/704875249a9c.js","43":"/static/bundles/metro/LocationPageContainer.js/df41afe97dcc.js","44":"/static/bundles/metro/LocationsDirectoryCityPage.js/d80b49a049f1.js","45":"/static/bundles/metro/LocationsDirectoryCountryPage.js/a28958392064.js","46":"/static/bundles/metro/LandingPage.js/38a41f782ec3.js","47":"/static/bundles/metro/SimilarAccountsPage.js/ecca1696c326.js","48":"/static/bundles/metro/SimilarAccountsModal.js/ae1d8cdbb856.js","49":"/static/bundles/metro/FollowListPage.js/0ef27dea2a44.js","50":"/static/bundles/metro/FollowListModal.js/71879c1ab126.js","51":"/static/bundles/metro/FeedPageContainer.js/1774fe85a8a1.js","52":"/static/bundles/metro/MultiStepSignupPage.js/8200e820a9e1.js","53":"/static/bundles/metro/NewUserInterstitial.js/e6c154ca59f9.js","54":"/static/bundles/metro/FBSignupPage.js/1a79f3c2a7d8.js","55":"/static/bundles/metro/EmailConfirmationPage.js/2ec323716f97.js","56":"/static/bundles/metro/UserCollectionMediaPageContainer.js/955427f10f61.js","57":"/static/bundles/metro/UserCollectionsPageContainer.js/1330f9b2b0e6.js","58":"/static/bundles/metro/DiscoverEmbedsPageContainer.js/70d59aaa9b88.js","59":"/static/bundles/metro/DiscoverPeoplePageContainer.js/0bfc8979f64d.js","60":"/static/bundles/metro/DiscoverMediaPageContainer.js/67ad27b3f61a.js","61":"/static/bundles/metro/CommentLikedByListContainer.js/6e4a018edc93.js","62":"/static/bundles/metro/LikedByListContainer.js/33395b20f69a.js","63":"/static/bundles/metro/DirectNewThread.js/62a3fe660519.js","64":"/static/bundles/metro/ExploreMediaPageContainer.js/d3e59b2e7dcd.js","65":"/static/bundles/metro/StoryCreationPage.js/1ad5656b1b71.js","66":"/static/bundles/metro/CreationModules.js/f3543770428e.js","67":"/static/bundles/metro/ContactInvitesOptOutStatusPage.js/4d16b886ed28.js","68":"/static/bundles/metro/NewTermsConfirmPage.js/925c23f43ff0.js","69":"/static/bundles/metro/TermsUnblockPage.js/66a39aaa7d83.js","70":"/static/bundles/metro/TermsAcceptPage.js/50962ac2ae47.js","71":"/static/bundles/metro/ParentalConsentNotParentPage.js/df764333cd15.js","72":"/static/bundles/metro/ParentalConsentPage.js/8dfb18240489.js","73":"/static/bundles/metro/ContactInvitesOptOutPage.js/e352ff7ee807.js","74":"/static/bundles/metro/AccountRecoveryLandingPage.js/c41f71e812b4.js","75":"/static/bundles/metro/CheckpointUnderageAppealPage.js/ce4e7967d7bf.js","76":"/static/bundles/metro/DataDownloadRequestConfirmPage.js/80703648ddb0.js","77":"/static/bundles/metro/DataDownloadRequestPage.js/192777857957.js","78":"/static/bundles/metro/DataControlsSupportPage.js/c918398fe707.js","79":"/static/bundles/metro/AndroidBetaPrivacyBugPage.js/4b7aa3e24f94.js","80":"/static/bundles/metro/BlockedAccountsBugPage.js/cbdd61e88707.js","81":"/static/bundles/metro/PublicAccountNotMadePrivateBugPage.js/59ad122cbadb.js","82":"/static/bundles/metro/PrivateAccountMadePublicBugPage.js/b10f860d2469.js","83":"/static/bundles/metro/PlaintextPasswordBugPage.js/5fb70b9d3fbd.js","84":"/static/bundles/metro/AccountPrivacyBugPage.js/452bbebebee6.js","85":"/static/bundles/metro/AccessToolViewAllPage.js/c3f3886b9074.js","86":"/static/bundles/metro/AccessToolPage.js/180d57a77c06.js","87":"/static/bundles/metro/ContactHistoryPage.js/b55dbad14c1a.js","88":"/static/bundles/metro/SettingsModules.js/b87b5f605153.js","89":"/static/bundles/metro/CameraPage.js/dffdc0175772.js","90":"/static/bundles/metro/DonateCheckoutPage.js/1ca344997633.js","91":"/static/bundles/metro/AdsSettingsPage.js/b2ef8e85b610.js","92":"/static/bundles/metro/ActivityFeedPage.js/5857d48b8bad.js","93":"/static/bundles/metro/DirectMQTT.js/1938f98f573b.js","98":"/static/bundles/metro/EmbedRich.js/8e6c194ac51a.js","99":"/static/bundles/metro/EmbedAsyncLogger.js/08d2be76ec64.js"}</script>
+<script type="text/javascript" src="/static/bundles/metro/Polyfills.js/96d08e67c7de.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/static/bundles/metro/Vendor.js/a8e62fa5b3ba.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/static/bundles/metro/en_US.js/b9cd2f43e19c.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/static/bundles/metro/ConsumerCommons.js/8eda69c4d795.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/static/bundles/metro/Consumer.js/49fd540cbe7c.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/static/bundles/metro/PostPageContainer.js/4c83c9c4a039.js" crossorigin="anonymous" charset="utf-8" async=""></script>
+
+            
+        
+
+        <script type="text/javascript">
+(function(){
+  function normalizeError(err) {
+    var errorInfo = err.error || {};
+    var getConfigProp = function(propName, defaultValueIfNotTruthy) {
+      var propValue = window._sharedData && window._sharedData[propName];
+      return propValue ? propValue : defaultValueIfNotTruthy;
+    };
+    return {
+      line: err.line || errorInfo.message || 0,
+      column: err.column || 0,
+      name: 'InitError',
+      message: err.message || errorInfo.message || '',
+      script: errorInfo.script || '',
+      stack: errorInfo.stackTrace || errorInfo.stack || '',
+      timestamp: Date.now(),
+      ref: window.location.href,
+      deployment_stage: getConfigProp('deployment_stage', ''),
+      is_canary: getConfigProp('is_canary', false),
+      rollout_hash: getConfigProp('rollout_hash', ''),
+      is_prerelease: window.__PRERELEASE__ || false,
+      bundle_variant: getConfigProp('bundle_variant', null),
+      request_url: err.url || window.location.href,
+      response_status_code: errorInfo.statusCode || 0
+    }
+  }
+  window.addEventListener('load', function(){
+    if (window.__bufferedErrors && window.__bufferedErrors.length) {
+      if (window.caches && window.caches.keys && window.caches.delete) {
+        window.caches.keys().then(function(keys) {
+          keys.forEach(function(key) {
+            window.caches.delete(key)
+          })
+        })
+      }
+      window.__bufferedErrors.map(function(error) {
+        return normalizeError(error)
+      }).forEach(function(normalizedError) {
+        var request = new XMLHttpRequest();
+        request.open('POST', '/client_error/', true);
+        request.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        request.send(JSON.stringify(normalizedError));
+      })
+    }
+  })
+}());
+</script>
+    </body>
+</html>
