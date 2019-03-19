@@ -1,0 +1,236 @@
+[
+    {
+        "comments": "There are comments.",
+        "date_added": "2019-03-19 03:56:32",
+        "description": "LMGTFY",
+        "link": "https://lmgtfy.com/",
+        "rating": 0,
+        "read": true,
+        "starred": true
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-19 03:38:39",
+        "description": "With the rise of website encryption (TLS), sniffing passwords from network activity has become difficult. However, it's still possible to quietly exfiltrate a target's network traffic in real time to extract passwords and sensitive information. Pertaining to macOS, there are two methods for retrieving traffic from a backdoored Mac.",
+        "link": "https://null-byte.wonderhowto.com/how-to/hacking-macos-sniff-passwords-mac-real-time-part-1-packet-exfiltration-0186088/",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-19 03:00:24",
+        "description": "Pay what you want for awesome ebooks and support charity!",
+        "link": "https://www.humblebundle.com/books/web-programming-oreilly-books?hmb_source=navbar&amp;hmb_medium=product_tile&amp;hmb_campaign=tile_index_1",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-13 04:37:24",
+        "description": "Pay what you want for awesome ebooks and support charity!",
+        "link": "https://github.com/denysdovhan/spaceship-prompt/",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-13 04:22:09",
+        "description": "A curated list of awesome Python frameworks, libraries and software",
+        "link": "https://awesome-python.com/",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-13 04:15:31",
+        "description": "When you go to your favorite online shopping destination to order that sweet new pair of winter gloves or the latest video game for the\u2026",
+        "link": "https://medium.com/@loadimpact/load-testing-a-website-that-requires-a-login-and-password-b067163c1471",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-13 03:36:26",
+        "description": "The login feature of websites helps to keep special content from non-users of the site and is also used to identify premium users too. Therefore if you intend web scraping a website, you could come across the login feature if the content is only available to registered users and will need a way to automate this.",
+        "link": "https://linuxhint.com/logging_into_websites_python/",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-13 03:33:08",
+        "description": "Once you\u2019ve put together enough web scrapers, you start to feel like you can do it in your sleep. I\u2019ve probably built hundreds of scrapers over the years for...",
+        "link": "https://blog.hartleybrody.com/web-scraping-cheat-sheet/",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-12 10:10:57",
+        "description": "An interview show where I talk to programmers, developers, and coders of all types who have gone into business for themselves. I find out the secrets to their success so you can make the move into an entrepreneurial pursuit yourself.",
+        "link": "https://www.ecpodcast.io/",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-12 10:04:37",
+        "description": "Interactive HTML cheat sheet for beginners. All HTML elements (incl. new HTML5 tags) with descriptions, attributes, code examples &amp; live previews",
+        "link": "https://digital.com/tools/html-cheatsheet/#a",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-12 08:04:15",
+        "description": "Interactive HTML cheat sheet for beginners. All HTML elements (incl. new HTML5 tags) with descriptions, attributes, code examples &amp; live previews",
+        "link": "https://docs.emmet.io/cheat-sheet/",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-12 06:24:19",
+        "description": "A Dash Generator Script for Any HTML",
+        "link": "https://github.com/technosophos/dashing",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-12 06:23:49",
+        "description": "Dash is an API Documentation Browser and Code Snippet Manager. Dash searches offline documentation of 200+ APIs and stores snippets of code. You can also generate your own documentation sets.",
+        "link": "https://kapeli.com/dash",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-12 06:23:10",
+        "description": "Quantopian is a free online platform for education and creation of investment algorithms. Selected algorithms get capital backing from Quantopian. Quantopian offers access to deep financial data, powerful research capabilities, university-level education tools, and a backtester.",
+        "link": "https://www.quantopian.com/help",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-12 04:44:30",
+        "description": "Three tools (pyenv, pipx, pipenv) make for smooth, isolated, reproducible Python developer and production environments.",
+        "link": "https://medium.com/homeaway-tech-blog/simplify-your-python-developer-environment-aba90f32dddb",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-12 03:18:18",
+        "description": "Learn Python with projects covering game &amp; web development, web scraping, MongoDB, Django, PyQt, and data visualization!",
+        "link": "https://www.udemy.com/python-complete/?couponCode=FBFREE18&amp;ranMID=39197&amp;ranEAID=WJXsbMyHnaw&amp;ranSiteID=WJXsbMyHnaw-TX8G12HR1v1iqsH3l9hd1w&amp;LSNPUBID=WJXsbMyHnaw",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-12 02:43:29",
+        "description": "Brackets is a lightweight, yet powerful, modern text editor. We blend visual tools into the editor so you get the right amount of help when you want it. With new features and extensions released every 3-4 weeks, it's like getting presents all year long.",
+        "link": "http://brackets.io/",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-11 10:36:41",
+        "description": "This is part of my Little Things series.",
+        "link": "https://medium.com/@dannysmith/little-thing-2-speeding-up-zsh-f1860390f92",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-11 10:36:17",
+        "description": "I was quickly opening multiple shells for an unrelated project today and noticed how abysmal my shell load speed was. After the initial load it was relatively fast, but the actual shell start up was noticeably slow. I decided to time it with time.",
+        "link": "https://blog.jonlu.ca/posts/speeding-up-zsh",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-11 10:32:43",
+        "description": "If you use python for anything beyond the basics, you need to able to work with multiple versions of python.",
+        "link": "https://medium.com/@AnandSharma/python-on-mac-the-right-way-1aecca9bc874",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-11 10:31:21",
+        "description": "The missing guide for setting up a great local development workflow for your Python projects",
+        "link": "https://hackernoon.com/reaching-python-development-nirvana-bb5692adf30c",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-11 10:30:57",
+        "description": "Are you struggling in default terminal ? You want your terminal look like this?",
+        "link": "https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-11 10:30:46",
+        "description": "There's a gap between learning the syntax of the Python programming language and being able to build a project from scratch. When you finish reading your first tutorial or book about Python, you're good to go for writing a Fibonacci suite calculator, but that does not help you starting your actual project. There are a few questions that pop up in your mind, and that's normal. Let's take a stab at those! Which Python version should I use? It's not a secret that Python has several versions that",
+        "link": "https://julien.danjou.info/starting-your-first-python-project/",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-11 10:30:32",
+        "description": "There's a gap between learning the syntax of the Python programming language and being able to build a project from scratch. When you finish reading your first tutorial or book about Python, you're good to go for writing a Fibonacci suite calculator, but that does not help you starting your actual project. There are a few questions that pop up in your mind, and that's normal. Let's take a stab at those! Which Python version should I use? It's not a secret that Python has several versions that",
+        "link": "http://dev.to|dev.to",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-11 10:30:17",
+        "description": "Any real world Python project has multiple code files...but how do you even get them to play together?",
+        "link": "https://dev.to/codemouse92/dead-simple-python-project-structure-and-imports-38c6",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    },
+    {
+        "comments": "No comments.",
+        "date_added": "2019-03-11 10:29:54",
+        "description": "Writing programs isn\u2019t all about the code. Sure when it comes down to it, the code is what makes the functioning program, but in order for that program to run as it does it needs structure. Most pr...",
+        "link": "https://able.bio/SamDev14/how-to-structure-a-python-project--685o1o6",
+        "rating": 0,
+        "read": false,
+        "starred": false
+    }
+]
