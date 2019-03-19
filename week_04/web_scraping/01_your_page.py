@@ -16,4 +16,4 @@ r = requests.get(url)
 print(r.text)
 print(r.status_code == 200)
 
-
+# bonus: extract all the spaces from both files, check if the clean versions are the same.

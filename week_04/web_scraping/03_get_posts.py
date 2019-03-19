@@ -16,6 +16,7 @@ BONUS: use pagination features to retrieve all posts of all pages in the group
 from requests_html import HTMLSession
 from requests_html import HTML
 import re
+import math
 
 
 url_login = "https://my.freecycle.org/login"
@@ -23,19 +24,20 @@ url_home = "https://my.freecycle.org/home/groups"
 session = HTMLSession()
 #
 # # login the website
-# payload = {'username': 'martin-martin', 'pass': 'bali2019'}
-# p = session.post(url_login, data=payload)
-# x = session.get(url_home)
-# print("ok" if x.status_code == 200 else "check your code")
+payload = {'username': 'martin-martin', 'pass': 'bali2019'}
+p = session.post(url_login, data=payload)
+x = session.get(url_home)
+print("ok" if x.status_code == 200 else "check your code")
 #
 # # exporting html file after logging in
 # with open('free_cycle.html', 'w') as f:
 #     f.write(x.text)
+
 # # search for the Denver link
-# for link in [i for i in x.html.absolute_links if i[-8:] == "DenverCO"]:
-#     print(link)
-# # navigate to the DenverCO link and create denver.html file
-# d = session.get(link)
+for link in [i for i in x.html.absolute_links if i[-8:] == "DenverCO"]:
+    print(link)
+# navigate to the DenverCO link and create denver.html file
+d = session.get(link)
 
 # with open('denver.html', 'w') as f:
 #     f.write(d.text)
@@ -65,26 +67,50 @@ session = HTMLSession()
 
 
 # looking for links of the next pages
-# while d.html.next:
-#     html = d.html.next() # TODO why _next is none?
-#     d = session.get(html)
-#     with open('denver.html', 'a') as f:
-#         f.write(d.text)
-#         p = d.html.find(selector='#group_posts_table', first=True)
-#         with open('denver_post.html', 'a') as f:
-#             f.write(p.text)
 
-with open("denver.html", "r") as f:
-    denver = f.read()
-    source = HTML(html=denver)
-match = source.find("p")
+# with open("denver.html", "r") as f:
+#     denver = f.read()
+#     source = HTML(html=denver)
+
+match = d.html.find("p")
+dict_links = {}
+max_num = 0
 for i in range(len(match)):
     if match[i].text.startswith("Showing"):
+        print(match[i].text)
         next_links = match[i].find('a')
-        for link in next_links:
-            print(link.text)
-            nextp = session.get(link.absolute_links)
-            nextp.html.find(selector='#group_posts_table', first=True)
-            with open('denver_all.txt', 'a') as f:
-                f.write(nextp.text)
 
+        for link in next_links:
+            for next in link.absolute_links:
+                page_list = re.findall("(\?page=\d)", next)
+                page_num = page_list[0][6:]
+                dict_links[page_num] = next
+                max_num = int(page_num) if int(page_num) >max_num else max_num
+        print(dict_links)
+                # nextp = session.get(next)
+                # p = nextp.html.find(selector='#group_posts_table', first=True)
+                #
+                # with open('denver_all.txt', 'a') as f:
+                #     f.write(p.text)
+
+
+def grab_posts(link):
+    '''
+    :param link: link to one of the posts table
+    :return: return the posts at the next page
+    '''
+    d = session.get(link)
+    match = d.html.find("p")
+    dict_links = {}
+    for i in range(len(match)):
+        if match[i].text.startswith("Showing"):
+            next_links = match[i].find('a')
+            counter = 0
+            for link in next_links:
+                for next in link.absolute_links:
+                    counter += 1  # TODO link.absolute_links is a set
+                    print(next, type(next))
+                    page_num = re.search("page=[0-9]", next)[2]
+                    page_num = page_num[5:]
+                    dict_links[page_num] = next
+                print(dict_links)
