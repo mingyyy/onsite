@@ -25,7 +25,6 @@ with open("/Users/Ming/Documents/CodingNomads/python-onsite/week_05/more_APIs/tw
 for k in c:
     if str(k) == str(randint(1,5)):
         tweet = c[k]
-# tweet = "testing cron"
 api.update_status(tweet)
 
 # # create the json file

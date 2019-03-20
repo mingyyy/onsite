@@ -16,7 +16,6 @@ import mi
 from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
-import jsbeautifier
 
 url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
 parameters = {
@@ -56,4 +55,3 @@ opts.indent_size = 2
 
 with open("coincap.json","w") as f:
     json.dump(all,f,sort_keys=True, indent=4, separators=(',', ': '))
-    # jsbeautifier.beautify(json.dump(all, f), opts)
