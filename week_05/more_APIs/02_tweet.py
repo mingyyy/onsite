@@ -20,11 +20,12 @@ auth.set_access_token(mi.tweepy_access_token, mi.tweepy_token_secret)
 
 api = tweepy.API(auth)
 
-with open("tweets_generator.json", "r") as f:
+with open("/Users/Ming/Documents/CodingNomads/python-onsite/week_05/more_APIs/tweets_generator.json", "r") as f:
     c = json.load(f)
 for k in c:
     if str(k) == str(randint(1,5)):
         tweet = c[k]
+# tweet = "testing cron"
 api.update_status(tweet)
 
 # # create the json file
