@@ -26,20 +26,35 @@ Using pgadmin:
 - Write the SQL queries to accomplish the following: (write each of your queries below for review)
 
     - select all records from users
+    SELECT * FROM users;
 
 
     - select all records from cars where car make = "Toyota"
+    SELECT * FROM cars WHERE make = 'Toyota';
 
 
     - use a join to select the first name and car model of every user who has bought a car
-
+   SELECT users.first_name, cars.model FROM users_cars AS uc JOIN cars ON uc.car_id = cars.id
+   JOIN users ON users.id = uc.user_id;
 
     - use a join to select the first and last name of everyone who has bought a red car
+    SELECT users.first_name, users.last_name FROM users_cars AS uc JOIN cars ON uc.car_id = cars.id
+   JOIN users ON users.id = uc.user_id WHERE cars.color = 'red';
 
 
-    - use an insert statement to create a new record in each table
+    - use an insert statement to create a new record in each table.
+    INSERT INTO public.users (id, first_name, last_name)
+    VALUES (7, 'Sarah', 'Parker')
 
+    INSERT INTO public.cars (id, make, model, color, year)
+    VALUES (9, 'Toyota', 'land cruiser', 'white', 2018)
+
+
+    INSERT INTO public.users_cars (id, user_id, car_id)
+    VALUES (10, 7, 9)
 
     - use sql to update a record in the "cars" table
+    UPDATE cars SET color = 'papaya red' WHERE id = 5;
 
     - delete one record from the database
+   DELETE FROM users_cars WHERE id = 7;
