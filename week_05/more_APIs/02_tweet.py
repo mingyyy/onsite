@@ -12,8 +12,10 @@ BONUS: Look into CRON jobs to automate your tweets to go out at scheduled times.
 
 import tweepy
 import json
-import mi
 from random import randint
+import sys
+sys.path.insert(0, '/Users/Ming/Documents/CodingNomads/python-onsite')
+import mi
 
 auth = tweepy.OAuthHandler(mi.tweepy_api_key, mi.tweepy_api_secret_key)
 auth.set_access_token(mi.tweepy_access_token, mi.tweepy_token_secret)
@@ -23,9 +25,10 @@ api = tweepy.API(auth)
 with open("/Users/Ming/Documents/CodingNomads/python-onsite/week_05/more_APIs/tweets_generator.json", "r") as f:
     c = json.load(f)
 for k in c:
-    if str(k) == str(randint(1,5)):
+    if str(k) == str(randint(1,9)):
         tweet = c[k]
 api.update_status(tweet)
+
 
 # # create the json file
 # tfile={}

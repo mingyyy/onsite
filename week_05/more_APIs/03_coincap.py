@@ -50,8 +50,6 @@ try:
 except (ConnectionError, Timeout, TooManyRedirects) as e:
     print(e)
 
-opts = jsbeautifier.default_options()
-opts.indent_size = 2
 
 with open("coincap.json","w") as f:
     json.dump(all,f,sort_keys=True, indent=4, separators=(',', ': '))

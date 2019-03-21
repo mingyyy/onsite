@@ -15,8 +15,6 @@ import re
 import time
 import urllib
 
-
-
 url = "https://www.instagram.com/hectorretamalphotographer"
 session = HTMLSession()
 ins = session.get(url)
