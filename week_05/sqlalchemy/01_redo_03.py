@@ -58,6 +58,8 @@ c = db.Table('cars', metadata,
               db.Column('year', db.Integer())
               )
 
+metadata.create_all(c, u, uc)
+
 # Insert into the tables, five records each
 # records=[
 #     {'id': 100, 'first_name': 'Martin', 'last_name': 'Martin'},
