@@ -28,23 +28,25 @@ from selenium.webdriver.common.by import By
 import time
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
+import json
+
 profile = webdriver.FirefoxProfile()
 profile.accept_untrusted_certs = True
 
-driver=webdriver.Firefox(executable_path="C:/Utility/geckodriver.exe", firefox_profile=profile)
-driver.get('https://www.youtube.com/watch?v=QOzZDdXetUA')
+driver = webdriver.Firefox(firefox_profile=profile)
+driver.get('https://www.youtube.com/watch?v=M54UFvJqQ5I')
 driver.execute_script('window.scrollTo(1, 500);')
 
 time.sleep(5)
 driver.execute_script('window.scrollTo(1, 3000);')
 
-comments=driver.find_elements_by_xpath('//*[@id="content-text"]')
-name=driver.find_elements_by_xpath('//*[@id="author-text"]')
-
+comments = driver.find_elements_by_xpath('//*[@id="content-text"]')
+name = driver.find_elements_by_xpath('//*[@id="author-text"]')
+td = driver.find_elements_by_xpath('//*[@id=""]')
 while True:
     try:
         loadMoreButton = driver.find_element_by_xpath('//*[@id="more"]')
-        time.sleep(2)
+        time.sleep(3)
         loadMoreButton.click()
         time.sleep(5)
     except Exception as e:
@@ -53,8 +55,19 @@ while True:
 
 time.sleep(10)
 
-number_of_items=len(name)
-for i in range (number_of_items):
+number_of_items = len(name)
+file = []
+for i in range(number_of_items):
+    c={}
+    c[name[i].text] = comments[i].text
+    file.append(c)
     print(name[i].text + " : ")
     print(comments[i].text)
+
+with open("youtube_comments", "w") as f:
+    json.dump(file, f, sort_keys=True, indent=4, separators=(',', ': '))
+
 driver.quit()
+
+# Message: Element <paper-button id="more" class="style-scope ytd-expander"> could not be scrolled into view
+# MY: somehow can't scroll down more
