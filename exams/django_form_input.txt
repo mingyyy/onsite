@@ -2,22 +2,31 @@ DJANGO FORM INPUT
 =================
 
 1) What HTML element do we need to collect user input?
+form
 
 2) Where can we define what HTTP method the user input will be sent with?
+in <form> attribute the the http method = 'GET'
 
 3) How can we check which HTTP request brought us to a function in views.py?
+in forms.py if request.method != 'POST' checks if it is POST or not
 
 4) What class do we inherit from when we want to create a Form class from an
 existing model?
-
--
+models.ModelForm
 
 5) Explain the namespace for apps and URL paths and why this whole thing is important
+To define the namespace, we have to do two things:
+1. we define app_name in setting.py
+2. when we define the path in urls.py, the third parameter is the name of your choice which
+will be used in hrefs
 
 6) Why do we want to use a HttpResponseRedirect() after submitting a form?
+display the content of the form.
 
 7) On a high-level, what is reverse() about?
+imported from django.urls module. reverse() takes in app.namespace and returns a url for HttpResponseRedire()
 
 8) Which file to look into if you get a NoReverseMatch error?
+urls.py of your app, where we set the namespace
 
 9) How can we display a form inside of our template?
