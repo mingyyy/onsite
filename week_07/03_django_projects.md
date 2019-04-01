@@ -1,6 +1,6 @@
 # Django Project Week
 
-Learning more about Django Web Development through building 2 Apps.
+Potential projects to pick from.
 
 * (1) Polls App
 * (2) Djitter
