@@ -1,0 +1,37 @@
+HEROKU DEPLOYMENT / SWITCHING DJANGO'S DB BACKEND
+=================================================
+
+1) High level steps to get our project up and running on Heroku
+
+2) What do we need to prepend to a python command in order to
+run code remotely on a Heroku server?
+
+3) What does a database connection string consist of?
+
+4) Where do the parts of Q3 go in Django?
+
+5) High level steps to migrate a DB from SQLite to Postgres
+
+
+YOUR QUESTIONS
+==============
+
+1) ANDY:
+
+2) FREDERICK:
+
+3) BLAKE: 
+
+4) MICHAEL:
+
+5) MING:
+
+6) MELISSA:
+
+7) ROBERT:
+
+8) DANIEL:
+
+9) BEN:
+
+10: ARNO:
