@@ -16,22 +16,15 @@ run code remotely on a Heroku server?
 YOUR QUESTIONS
 ==============
 
-1) ANDY:
+3) BLAKE: Working with different branches and pushing to Heroku, how can we guarantee uptime?
 
-2) FREDERICK:
 
-3) BLAKE: 
-
-4) MICHAEL:
-
-5) MING:
-
-6) MELISSA:
+5) MING: After changing data ownership permissions, what steps you need to follow to make
+	that reflected in your app?
 
 7) ROBERT:
+	* How to use static files (CSS, JS) with Django on a server?
+	* How to push your database information up to a remote DB on Heroku?
 
-8) DANIEL:
 
-9) BEN:
-
-10: ARNO:
+10: ARNO: How do you handle your SECRET_KEY with Heroku?
