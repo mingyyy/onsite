@@ -2,15 +2,40 @@ HEROKU DEPLOYMENT / SWITCHING DJANGO'S DB BACKEND
 =================================================
 
 1) High level steps to get our project up and running on Heroku
+1. register an account in Heroku, download Heroku, login, config secret key
+2. make Procfile, changes in setting.py, pip freeze
+3. migrate DB: $ heroku run python manage.py migrate
+4. static data: setting.py, whitenoise, wsgi.py
+5. git add, commit, push to Heroku
+
+In between, lots of debugging and
 
 2) What do we need to prepend to a python command in order to
 run code remotely on a Heroku server?
+$ heroku run
 
 3) What does a database connection string consist of?
+Connection string for Postgres: URI
+engine, name of DB, username, password, host: localhost/IP address
+TCP/IP
 
 4) Where do the parts of Q3 go in Django?
+setting.py DATABASES={}
+Server=127.0.0.1;Port=5432;Database=myDataBase;
+User Id=myUsername; Password=myPassword; PostgreSQL.
+
 
 5) High level steps to migrate a DB from SQLite to Postgres
+1. change in settings DATABASE, 4 extra lines
+2. $ python manage.py makemigration/migrate make sure SQLit3 is upto date
+3. create database in Postgres,
+4. post data from SQLite to Postgres (one line of command)
+
+1. datadump
+git add/push/commit
+2. heroku run migrate
+3. heroku run loaddata <name_file>
+
 
 
 YOUR QUESTIONS
@@ -22,9 +47,23 @@ YOUR QUESTIONS
 5) MING: After changing data ownership permissions, what steps you need to follow to make
 	that reflected in your app?
 
+
+	1. migrate data, default
+	2. make sure top level model take in the user id
+	3. migrate the DB to heroku
+	4. git add, commmit, push
+
+
 7) ROBERT:
 	* How to use static files (CSS, JS) with Django on a server?
+	create static folder
+	change setting, STATICFILES_DIR, whitenoise under security middleware directly, STATICSTORAGE
+	$ python manage.py collectstatic (might want to delete the STATICFILES folder first)
+	change wsgi.py
+	make sure the names matches exactly
+
 	* How to push your database information up to a remote DB on Heroku?
 
 
 10: ARNO: How do you handle your SECRET_KEY with Heroku?
+ os.environ(SECRET_KEY)

@@ -2,13 +2,25 @@ DJANGO USER AUTHENTICATION
 ==========================
 
 1) What is the difference between authentication and login?
+login is for existing users once we authenticated while authentication is to verify the user info.
+:
+what we can do with form
+1. render form template
+2. save to DB
+
+form = UserCreationForm(request.POST)
+1). save to DB --> new user
+2). authentication is to verify the user before we login the user (username, password)
+3). login(request, UserObject(already authenticated))
 
 2) Why do we need a POST request for user auth?
+we need to send user's username and password; GET only retrieve data
 
 3) What's the advantage for using Django for authentication?
+security feature and easy application
 
-4) How did we write the authentication for for users
-
+4) How did we write the authentication for users
+new_user = authenticate(request(user =  , password = password1))
 -
 
 EXTRA TWIST: YOUR QUESTIONS
@@ -16,17 +28,34 @@ EXTRA TWIST: YOUR QUESTIONS
 
 5) Arno: How do you make sure you pass a variable (e.g. topic_id) to
 	be taken into the next function?
+pass it to a dictionary "called context" and take it in render(request, 'filename.html', context)
+in html page, {% url 'app_name: path_name' argument(pass to the function) %}
+in views, def function(request, argument(e.g. topic.id))
 
 6) Melissa: What is the difference between reverse() and HttpResponseRedirect?
+- HttpResponseRedirect is a class imported from django.http, while reverse() method is imported form django.urls module.
+
+- HttpResponseRedirect is to get a string input ( a url) and redirect to that url, make a GET request.
+On the other hand, reverse() returns the url given the namespace of the path e.g."logs:index", probably some
+
+- render() method is a method imported from django.shortcuts, which sending a template and transform it into a new HTML file.
+approximately **translating.
+
 
 8) Ming: In HTML file what do we need to do for improving security?
+inside a form, crosssite forgery attack
+{% csrf_token %}
 
 10) Daniel: How does authentication work?
+In django authentication came from the django.contrib.auth module, sending user information
 
 11) Michael: What are the form fields and how do they come into existence?
+forms.ModelForm came from django predefined model forms which makes setting the fields easier.
+If we are not using the ModelForm, we have more work to define the fields in detail.
 
 12) Blake: What would be the first place to look when Django returns 
 		an error?
+read the error message page and the python console to understand the errors.
 
 
 
